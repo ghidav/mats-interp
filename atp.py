@@ -1,3 +1,4 @@
+import numpy as np
 import torch
 from transformer_lens import HookedTransformer, ActivationCache, utils
 from tqdm import tqdm
@@ -9,7 +10,8 @@ from torchtyping import TensorType as TT
 from functools import partial
 from IPython.display import HTML, Markdown
 import pysvelte
-
+from plotly.subplots import make_subplots
+import ipywidgets as widgets
 
 import plotly.express as px
 
@@ -167,6 +169,7 @@ class Patching:
                 patched_logit_diff = self.metric(patched_logits).detach()
                 patching_result[layer, position] = (patched_logit_diff - self.clean_logit_diff)/(self.corrupted_logit_diff - self.clean_logit_diff)
 
+    
     def patch_atp(self):
         
         _, corrupted_cache = self.model.run_with_cache(self.corrupted_tokens)
@@ -218,15 +221,40 @@ class Patching:
                 head=self.model.cfg.n_heads,
             )
 
-    def patch_atp_star(self):
-        pass
+    ############
+    # Plotting #
+    ############
+    def plot_single_pattern(self, layer, tokens, **kwargs):
+        fig = make_subplots(
+            rows=self.model.cfg.n_heads // 4 + 1,
+            cols=4,
+            shared_yaxes=True
+        )
+        for i in range(self.model.cfg.n_heads):
+            data = self.patch[layer, i].cpu().numpy()
+            #data = np.fliplr(np.triu(np.fliplr(data), k=0)) - 1
+            data[data == -1] = np.nan
 
-    # Plotting
-    def plot_attention_attr(self, tokens, top_k=20, index=0, title=""):
-        if len(tokens.shape) == 2:
-            tokens = tokens[index]
-        if len(self.patch.shape) == 5:
-            self.patch = self.patch[index]
+            fig.add_trace(
+                px.imshow(
+                    data,
+                    x=[f"{tok} ({j})" for j, tok in enumerate(self.model.to_str_tokens(tokens))],
+                    y=list(reversed([f"{tok} ({j})" for j, tok in enumerate(self.model.to_str_tokens(tokens))])),
+                    color_continuous_scale="RdBu",
+                    zmin=0,
+                    zmax=1,
+                    title=f"Head {i}",
+                    aspect="auto"
+                ).data[0],
+                row=i // 4 + 1,
+                col=i % 4 + 1
+            )
+        
+        fig.update_layout(**kwargs)
+        fig.show()
+    
+    def plot_attention_attr(self, tokens, **kwargs):
+
         attention_attr_pos = self.patch.clamp(min=-1e-5)
         attention_attr_neg = -self.patch.clamp(max=1e-5)
         attention_attr_signed = torch.stack([attention_attr_pos, attention_attr_neg], dim=0)
@@ -238,22 +266,62 @@ class Patching:
         attention_attr_indices = (
             attention_attr_signed.max(-1).values.max(-1).values.argsort(descending=True)
         )
-        # print(attention_attr_indices.shape)
-        # print(attention_attr_indices)
-        attention_attr_signed = attention_attr_signed[attention_attr_indices, :, :]
+
+        attention_attr_signed = attention_attr_signed[attention_attr_indices, :, :] # [2*layer*head, pos, pos]
         head_labels = [self.head_names_signed[i.item()] for i in attention_attr_indices]
+        head_labels_by_layer = [[] for l in range(self.model.cfg.n_layers)]
+        k = 0
+        for h in head_labels:
+            l = int(h[1])
+            head_labels_by_layer[l].append((h, k))
+            k += 1
 
-        if title:
-            display(Markdown("### " + title))
-        display(
-            pysvelte.AttentionMulti(
-                tokens=self.model.to_str_tokens(tokens),
-                attention=attention_attr_signed.permute(1, 2, 0)[:, :, :top_k],
-                head_labels=head_labels[:top_k],
-            )
+        # Create a dropdown widget for layer selection
+        layer_selector = widgets.Dropdown(
+            options=[(f'Layer {i}', i) for i in range(self.model.cfg.n_layers)],
+            value=0,
+            description='Layer:',
         )
+        
+        # Function to update the plot based on the selected layer
+        def update_plot(layer):
 
-    def plot_patch(self, **kwargs):
+            rows = len(head_labels_by_layer[layer])
+
+            # Update the plot  
+            fig = make_subplots(
+                rows=rows // 4 + 1,
+                cols=4,
+                shared_yaxes=True,
+                horizontal_spacing=0.01,
+            )
+            for i, (h, k) in enumerate(head_labels_by_layer[layer]):
+                data = attention_attr_signed[k].cpu().numpy() + 1
+                data = np.fliplr(np.triu(np.fliplr(data), k=0)) - 1
+
+                # Replace the lower right triangle with np.nan
+                data[data == -1] = np.nan
+                fig.add_trace(
+                    px.imshow(
+                        data,
+                        x=[f"{tok} ({j})" for j, tok in enumerate(self.model.to_str_tokens(tokens))],
+                        y=list(reversed([f"{tok} ({j})" for j, tok in enumerate(self.model.to_str_tokens(tokens))])),
+                        color_continuous_scale="RdBu",
+                        zmin=-1,
+                        zmax=1,
+                        title=h,
+                        aspect="auto"
+                    ).data[0],
+                    row=i // 4 + 1,
+                    col=i % 4 + 1
+                )
+                fig.update_layout(**kwargs)
+            fig.show()
+
+        # Display the widget and attach the update function
+        widgets.interact(update_plot, layer=layer_selector)
+
+    def plot_patch(self, layer=None, what=None, **kwargs):
         if self.component in ["resid_pre", "resid_post"]:
             ys = []
             for i in range(self.model.cfg.n_layers):
@@ -264,7 +332,12 @@ class Patching:
             ys = [f'Attn L{i} H{j}' for i in range(self.model.cfg.n_layers) for j in range(self.model.cfg.n_heads)]
         
         if "pattern" in self.component:
-            self.plot_attention_attr(self.model.to_tokens(self.x_clean), title="Patching results")
+            if what == 'top':
+                self.plot_attention_attr(self.model.to_tokens(self.x_clean), title="Patching results", **kwargs)
+            else:
+                assert layer is not None, 'Layer must be specified for pattern component'
+                self.plot_single_pattern(layer, self.model.to_tokens(self.x_clean), title="Patching results", **kwargs)
+                
         else:
             fig = px.imshow(
                 self.patch.cpu().numpy(), 
@@ -276,5 +349,3 @@ class Patching:
         
             fig.update_layout(**kwargs)
             fig.show()
-            
-        
