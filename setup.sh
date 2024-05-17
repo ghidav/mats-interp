@@ -16,18 +16,20 @@ configure_git() {
 
 # Set up a Python virtual environment
 echo "Creating a virtual environment..."
-python3 -m venv myenv
+python3 -m venv ../myenv
 
 # Activate the virtual environment
-source myenv/bin/activate
+source ../myenv/bin/activate
 
 # Upgrade pip
 pip install --upgrade pip
 
 # Install necessary packages
 echo "Installing necessary packages..."
-pip install -r requirements.txt
+#pip install -r requirements.txt
 pip install -U "huggingface_hub[cli]"
+pip install -U kaleido
+python -m ipykernel install --user --name=myenv --display-name="mats-interp"
 
 git clone git@github.com:ghidav/feature-circuits.git
 
@@ -36,6 +38,8 @@ read -p "Please enter your Hugging Face token: " HF_TOKEN
 
 # Set the Hugging Face token as an environment variable
 export HF_TOKEN=$HF_TOKEN
+mkdir /workspace/huggingface
+export HF_HOME=/workspace/huggingface
 echo "Hugging Face token set."
 
 # Downloading models

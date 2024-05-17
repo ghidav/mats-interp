@@ -169,6 +169,8 @@ class Patching:
                 patched_logit_diff = self.metric(patched_logits).detach()
                 patching_result[layer, position] = (patched_logit_diff - self.clean_logit_diff)/(self.corrupted_logit_diff - self.clean_logit_diff)
 
+        self.patch = patching_result
+
     
     def patch_atp(self):
         
@@ -176,7 +178,7 @@ class Patching:
 
         _, clean_cache, clean_grad_cache = self.get_cache_fwd_and_bwd(self.clean_tokens)
 
-        if self.component in ["resid_pre", "resid_post"]:
+        if self.component in ["resid_pre", "resid_post", "attn_out"]:
             corrupted_act, labels = corrupted_cache.accumulated_resid(-1, incl_mid=True, return_labels=True)
             clean_act = clean_cache.accumulated_resid(-1, incl_mid=True, return_labels=False)
             clean_grad_act = clean_grad_cache.accumulated_resid(-1, incl_mid=True, return_labels=False)
@@ -321,7 +323,7 @@ class Patching:
         # Display the widget and attach the update function
         widgets.interact(update_plot, layer=layer_selector)
 
-    def plot_patch(self, layer=None, what=None, **kwargs):
+    def plot(self, layer=None, what=None, **kwargs):
         if self.component in ["resid_pre", "resid_post"]:
             ys = []
             for i in range(self.model.cfg.n_layers):
@@ -331,6 +333,9 @@ class Patching:
         elif self.component in ["attn_all", "attn_q", "attn_k", "attn_v", "attn_z"]:
             ys = [f'Attn L{i} H{j}' for i in range(self.model.cfg.n_layers) for j in range(self.model.cfg.n_heads)]
         
+        if self.how == 'ap':
+            ys = [f'L{i}' for i in range(self.model.cfg.n_layers)]
+            
         if "pattern" in self.component:
             if what == 'top':
                 self.plot_attention_attr(self.model.to_tokens(self.x_clean), title="Patching results", **kwargs)
@@ -348,4 +353,4 @@ class Patching:
             )
         
             fig.update_layout(**kwargs)
-            fig.show()
+        return fig
