@@ -1,19 +1,5 @@
 #!/bin/bash
 
-configure_git() {
-    if ! git config --global user.email > /dev/null; then
-        read -p "Please enter your Git email: " GIT_EMAIL
-        git config --global user.email "$GIT_EMAIL"
-        echo "Git email set to $GIT_EMAIL."
-    fi
-
-    if ! git config --global user.name > /dev/null; then
-        read -p "Please enter your Git name: " GIT_NAME
-        git config --global user.name "$GIT_NAME"
-        echo "Git name set to $GIT_NAME."
-    fi
-}
-
 # Set up a Python virtual environment
 echo "Creating a virtual environment..."
 python3 -m venv ../myenv
