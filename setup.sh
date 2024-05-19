@@ -26,7 +26,7 @@ export HF_HOME=/workspace/huggingface
 echo "Hugging Face token set."
 
 # Downloading models
-huggingface-cli login --token HF_TOKEN
+huggingface-cli login --token $HF_TOKEN
 huggingface-cli download gpt2
 huggingface-cli download google/gemma-2b
 huggingface-cli download jbloom/Gemma-2b-Residual-Stream-SAEs
