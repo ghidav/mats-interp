@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Upgrade pip
+source ../venv/bin/activate
 pip install --upgrade pip
 
 # Install necessary packages
