@@ -1,5 +1,5 @@
-prompt,label,prompt_corr,cot_gold,pred,cot_pred,correct_pred,correct_cot
-"Answer True or False to the following question. Answer as in the examples.
+,prompt,label,prompt_corr,cot_gold,pred,cot_pred,correct_pred,correct_cot,errors
+0,"Answer True or False to the following question. Answer as in the examples.
 
 Dumpuses are numpuses. Impuses are jompuses. Each yumpus is not spicy. Every dumpus is mean. Lorpuses are snowy. Each lempus is not transparent. Numpuses are tumpuses. Numpuses are moderate. Every tumpus is luminous. Jompuses are not blue. Impuses are gorpuses. Every gorpus is not hot. Each dumpus is a yumpus. Every gorpus is a lempus. Lorpuses are sterpuses. Every impus is muffled. Every numpus is an impus. Gorpuses are rompuses. Polly is an impus. Polly is a lorpus.
 Question: Is Polly muffled?
@@ -137,8 +137,8 @@ Gorpuses are sterpuses. Gorpuses are grimpuses. Every dumpus is a jompus. Every 
 Question: Is Wren cold?
 Think step-by-step.
 
-","['Wren is a grimpus.', 'Every grimpus is not cold.', 'Wren is not cold.']",False,"['Wren is a grimpus.', 'Every grimpus is not cold.', 'Wren is not cold.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Wren is a grimpus.', 'Every grimpus is not cold.', 'Wren is not cold.']",False,"['Wren is a grimpus.', 'Every grimpus is not cold.', 'Wren is not cold.']",True,True,C|C|C|
+1,"Answer True or False to the following question. Answer as in the examples.
 
 Yumpuses are grimpuses. Impuses are sterpuses. Sterpuses are dumpuses. Each sterpus is a numpus. Each impus is windy. Lempuses are melodic. Rompuses are lorpuses. Rompuses are not earthy. Numpuses are sweet. Rompuses are impuses. Sterpuses are transparent. Every yumpus is not dull. Lorpuses are luminous. Impuses are lempuses. Alex is a rompus. Alex is a yumpus.
 Question: Is Alex earthy?
@@ -276,8 +276,8 @@ Impuses are not orange. Each rompus is a tumpus. Each lorpus is a dumpus. Each t
 Question: Is Polly luminous?
 Think step-by-step.
 
-","['Polly is a lorpus.', 'Lorpuses are not luminous.', 'Polly is not luminous.']",False,"['Polly is a lorpus.', 'Lorpuses are not luminous.', 'Polly is not luminous.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Polly is a lorpus.', 'Lorpuses are not luminous.', 'Polly is not luminous.']",False,"['Polly is a lorpus.', 'Lorpuses are not luminous.', 'Polly is not luminous.']",True,True,C|C|C|
+2,"Answer True or False to the following question. Answer as in the examples.
 
 Each yumpus is not transparent. Each shumpus is loud. Every impus is a brimpus. Every shumpus is a tumpus. Each impus is a yumpus. Every impus is not shy. Alex is an impus. Alex is a shumpus.
 Question: Is Alex shy?
@@ -415,8 +415,8 @@ Wumpuses are not bitter. Each grimpus is a zumpus. Tumpuses are small. Every wum
 Question: Is Max bitter?
 Think step-by-step.
 
-","['Max is a wumpus.', 'Wumpuses are bitter.', 'Max is bitter.']",False,"['Max is a grimpus.', 'Each grimpus is a zumpus.', 'Max is a zumpus.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a wumpus.', 'Wumpuses are bitter.', 'Max is bitter.']",False,"['Max is a grimpus.', 'Each grimpus is a zumpus.', 'Max is a zumpus.']",False,False,S0|S1-s2s|S2-s4a|
+3,"Answer True or False to the following question. Answer as in the examples.
 
 Shumpuses are gorpuses. Shumpuses are shy. Each grimpus is dull. Numpuses are slow. Each numpus is a lempus. Every yumpus is a jompus. Every rompus is not metallic. Each numpus is a grimpus. Each lorpus is amenable. Wumpuses are fruity. Each jompus is muffled. Every shumpus is a numpus. Dumpuses are vumpuses. Each dumpus is transparent. Each brimpus is orange. Jompuses are shumpuses. Lorpuses are yumpuses. Jompuses are rompuses. Gorpuses are snowy. Yumpuses are wumpuses. Yumpuses are temperate. Each lorpus is a brimpus. Fae is a dumpus. Fae is a jompus.
 Question: Is Fae muffled?
@@ -554,8 +554,8 @@ Each impus is a sterpus. Each zumpus is a wumpus. Every tumpus is aggressive. Ea
 Question: Is Polly cold?
 Think step-by-step.
 
-","['Polly is a zumpus.', 'Zumpuses are not cold.', 'Polly is not cold.']",False,"['Polly is a brimpus.', 'Each brimpus is not liquid.', 'Polly is not liquid.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Polly is a zumpus.', 'Zumpuses are not cold.', 'Polly is not cold.']",False,"['Polly is a brimpus.', 'Each brimpus is not liquid.', 'Polly is not liquid.']",True,False,S0|S1-s2s|S2-miss_a|
+4,"Answer True or False to the following question. Answer as in the examples.
 
 Every tumpus is a zumpus. Dumpuses are not brown. Dumpuses are vumpuses. Each tumpus is sour. Vumpuses are earthy. Dumpuses are shumpuses. Stella is a dumpus. Stella is a tumpus.
 Question: Is Stella brown?
@@ -693,8 +693,8 @@ Sterpuses are cold. Yumpuses are grimpuses. Dumpuses are numpuses. Every zumpus 
 Question: Is Sally sunny?
 Think step-by-step.
 
-","['Sally is a zumpus.', 'Every zumpus is sunny.', 'Sally is sunny.']",True,"['Sally is a dumpus.', 'Every zumpus is sunny.', 'Sally is sunny.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a zumpus.', 'Every zumpus is sunny.', 'Sally is sunny.']",True,"['Sally is a dumpus.', 'Every zumpus is sunny.', 'Sally is sunny.']",True,False,S0|C|C|
+5,"Answer True or False to the following question. Answer as in the examples.
 
 Every gorpus is not nervous. Gorpuses are shumpuses. Every shumpus is loud. Lempuses are not luminous. Jompuses are not bright. Each zumpus is aggressive. Jompuses are zumpuses. Tumpuses are sour. Every tumpus is a dumpus. Each gorpus is a numpus. Jompuses are gorpuses. Numpuses are lempuses. Each numpus is a yumpus. Numpuses are not floral. Polly is a tumpus. Polly is a numpus.
 Question: Is Polly floral?
@@ -832,8 +832,8 @@ Every lorpus is not earthy. Each lorpus is a jompus. Each tumpus is melodic. Eac
 Question: Is Rex earthy?
 Think step-by-step.
 
-","['Rex is a lorpus.', 'Every lorpus is earthy.', 'Rex is earthy.']",True,"['Rex is a lorpus.', 'Lorpuses are earthy.', 'Rex is earthy.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Rex is a lorpus.', 'Every lorpus is earthy.', 'Rex is earthy.']",True,"['Rex is a lorpus.', 'Lorpuses are earthy.', 'Rex is earthy.']",True,False,C|S1-miss_a|C|
+6,"Answer True or False to the following question. Answer as in the examples.
 
 Every rompus is moderate. Jompuses are brimpuses. Every tumpus is a lempus. Every jompus is a rompus. Tumpuses are blue. Every jompus is loud. Fae is a tumpus. Fae is a jompus.
 Question: Is Fae loud?
@@ -971,8 +971,8 @@ Each impus is a dumpus. Each impus is a lorpus. Every shumpus is a wumpus. Grimp
 Question: Is Sam spicy?
 Think step-by-step.
 
-","['Sam is a wumpus.', 'Wumpuses are spicy.', 'Sam is spicy.']",True,"['Sam is a grimpus.', 'Grimpuses are spicy.', 'Sam is spicy.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a wumpus.', 'Wumpuses are spicy.', 'Sam is spicy.']",True,"['Sam is a grimpus.', 'Grimpuses are spicy.', 'Sam is spicy.']",True,False,S0|S1-miss_a|C|
+7,"Answer True or False to the following question. Answer as in the examples.
 
 Brimpuses are sunny. Grimpuses are wumpuses. Shumpuses are vumpuses. Zumpuses are dumpuses. Shumpuses are brimpuses. Wumpuses are muffled. Every grimpus is a shumpus. Grimpuses are not transparent. Zumpuses are large. Each shumpus is not nervous. Sally is a zumpus. Sally is a grimpus.
 Question: Is Sally transparent?
@@ -1110,8 +1110,8 @@ Sterpuses are brimpuses. Each sterpus is a numpus. Gorpuses are rompuses. Numpus
 Question: Is Wren floral?
 Think step-by-step.
 
-","['Wren is a sterpus.', 'Sterpuses are not floral.', 'Wren is not floral.']",False,"['Wren is a gorpus.', 'Gorpuses are not floral.', 'Wren is not floral.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Wren is a sterpus.', 'Sterpuses are not floral.', 'Wren is not floral.']",False,"['Wren is a gorpus.', 'Gorpuses are not floral.', 'Wren is not floral.']",True,False,S0|S1-miss_a|C|
+8,"Answer True or False to the following question. Answer as in the examples.
 
 Every numpus is an impus. Each impus is kind. Lempuses are shumpuses. Numpuses are lorpuses. Numpuses are brown. Every lempus is moderate. Fae is a lempus. Fae is a numpus.
 Question: Is Fae brown?
@@ -1249,8 +1249,8 @@ Numpuses are fruity. Tumpuses are not snowy. Zumpuses are opaque. Each grimpus i
 Question: Is Stella fruity?
 Think step-by-step.
 
-","['Stella is a numpus.', 'Numpuses are not fruity.', 'Stella is not fruity.']",False,"['Stella is a zumpus.', 'Zumpuses are not fruity.', 'Stella is not fruity.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a numpus.', 'Numpuses are not fruity.', 'Stella is not fruity.']",False,"['Stella is a zumpus.', 'Zumpuses are not fruity.', 'Stella is not fruity.']",True,False,S0|S1-miss_a|C|
+9,"Answer True or False to the following question. Answer as in the examples.
 
 Yumpuses are nervous. Each zumpus is earthy. Each zumpus is a sterpus. Zumpuses are tumpuses. Each tumpus is angry. Wumpuses are lorpuses. Every wumpus is not opaque. Each tumpus is a shumpus. Every sterpus is not rainy. Tumpuses are yumpuses. Polly is a zumpus. Polly is a wumpus.
 Question: Is Polly earthy?
@@ -1388,8 +1388,8 @@ Grimpuses are impuses. Each grimpus is a lempus. Each grimpus is nervous. Every 
 Question: Is Sam nervous?
 Think step-by-step.
 
-","['Sam is a grimpus.', 'Each grimpus is not nervous.', 'Sam is not nervous.']",False,"['Sam is a grimpus.', 'Every grimpus is not nervous.', 'Sam is not nervous.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a grimpus.', 'Each grimpus is not nervous.', 'Sam is not nervous.']",False,"['Sam is a grimpus.', 'Every grimpus is not nervous.', 'Sam is not nervous.']",True,False,C|S1-s2s|C|
+10,"Answer True or False to the following question. Answer as in the examples.
 
 Each jompus is spicy. Each impus is a jompus. Vumpuses are not rainy. Lempuses are liquid. Jompuses are dumpuses. Each sterpus is a shumpus. Every jompus is a lempus. Sterpuses are not fast. Each impus is floral. Each impus is a vumpus. Alex is a jompus. Alex is a sterpus.
 Question: Is Alex spicy?
@@ -1527,8 +1527,8 @@ Every shumpus is not nervous. Tumpuses are not small. Wumpuses are not slow. Shu
 Question: Is Sam sweet?
 Think step-by-step.
 
-","['Sam is a numpus.', 'Every numpus is sweet.', 'Sam is sweet.']",True,"['Sam is a numpus.', 'Each numpus is sweet.', 'Sam is sweet.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a numpus.', 'Every numpus is sweet.', 'Sam is sweet.']",True,"['Sam is a numpus.', 'Each numpus is sweet.', 'Sam is sweet.']",True,False,C|S1-miss_a|C|
+11,"Answer True or False to the following question. Answer as in the examples.
 
 Every rompus is not spicy. Impuses are not red. Rompuses are numpuses. Every vumpus is not transparent. Impuses are vumpuses. Every impus is a brimpus. Polly is an impus. Polly is a rompus.
 Question: Is Polly red?
@@ -1666,8 +1666,8 @@ Wumpuses are impuses. Every zumpus is a dumpus. Zumpuses are not bright. Each br
 Question: Is Stella snowy?
 Think step-by-step.
 
-","['Stella is a wumpus.', 'Every wumpus is not snowy.', 'Stella is not snowy.']",False,"['Stella is a wumpus.', 'Every wumpus is snowy.', 'Stella is snowy.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a wumpus.', 'Every wumpus is not snowy.', 'Stella is not snowy.']",False,"['Stella is a wumpus.', 'Every wumpus is snowy.', 'Stella is snowy.']",True,False,C|S1-lose_not|S2-lose_not|
+12,"Answer True or False to the following question. Answer as in the examples.
 
 Wumpuses are shumpuses. Sterpuses are not discordant. Each yumpus is feisty. Each wumpus is a yumpus. Each yumpus is a lempus. Each yumpus is a sterpus. Each sterpus is a vumpus. Lempuses are fast. Shumpuses are large. Impuses are not metallic. Each zumpus is dull. Each zumpus is a brimpus. Every grimpus is an impus. Every grimpus is a gorpus. Vumpuses are not hot. Grimpuses are sunny. Wumpuses are not mean. Sterpuses are grimpuses. Fae is a zumpus. Fae is a grimpus.
 Question: Is Fae sunny?
@@ -1805,8 +1805,8 @@ Each jompus is not dull. Tumpuses are bitter. Each jompus is a zumpus. Vumpuses 
 Question: Is Rex dull?
 Think step-by-step.
 
-","['Rex is a jompus.', 'Each jompus is dull.', 'Rex is dull.']",True,"['Rex is a jompus.', 'Each jompus is dull.', 'Rex is dull.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Rex is a jompus.', 'Each jompus is dull.', 'Rex is dull.']",True,"['Rex is a jompus.', 'Each jompus is dull.', 'Rex is dull.']",True,True,C|C|C|
+13,"Answer True or False to the following question. Answer as in the examples.
 
 Vumpuses are loud. Every zumpus is a vumpus. Every zumpus is sour. Wumpuses are fast. Each wumpus is a lempus. Each zumpus is a brimpus. Rex is a zumpus. Rex is a wumpus.
 Question: Is Rex sour?
@@ -1944,8 +1944,8 @@ Impuses are large. Each jompus is a grimpus. Every sterpus is brown. Every brimp
 Question: Is Fae transparent?
 Think step-by-step.
 
-","['Fae is a brimpus.', 'Each brimpus is transparent.', 'Fae is transparent.']",True,"['Fae is a brimpus.', 'Brimpuses are transparent.', 'Fae is transparent.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Fae is a brimpus.', 'Each brimpus is transparent.', 'Fae is transparent.']",True,"['Fae is a brimpus.', 'Brimpuses are transparent.', 'Fae is transparent.']",True,False,C|S1-miss_a|C|
+14,"Answer True or False to the following question. Answer as in the examples.
 
 Tumpuses are zumpuses. Zumpuses are wumpuses. Every tumpus is a vumpus. Each impus is a sterpus. Wumpuses are not luminous. Impuses are tumpuses. Yumpuses are lorpuses. Zumpuses are rainy. Tumpuses are fruity. Each zumpus is a grimpus. Every impus is not fast. Sterpuses are not opaque. Yumpuses are amenable. Every vumpus is not temperate. Alex is a zumpus. Alex is a yumpus.
 Question: Is Alex rainy?
@@ -2083,8 +2083,8 @@ Each dumpus is windy. Every yumpus is a jompus. Wumpuses are not slow. Wumpuses 
 Question: Is Polly sweet?
 Think step-by-step.
 
-","['Polly is a yumpus.', 'Yumpuses are sweet.', 'Polly is sweet.']",True,"['Polly is a yumpus.', 'Yumpuses are sweet.', 'Polly is sweet.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Polly is a yumpus.', 'Yumpuses are sweet.', 'Polly is sweet.']",True,"['Polly is a yumpus.', 'Yumpuses are sweet.', 'Polly is sweet.']",True,True,C|C|C|
+15,"Answer True or False to the following question. Answer as in the examples.
 
 Tumpuses are liquid. Every impus is a gorpus. Each vumpus is a grimpus. Every impus is a tumpus. Wumpuses are snowy. Wumpuses are sterpuses. Each vumpus is an impus. Each gorpus is large. Vumpuses are earthy. Each tumpus is a brimpus. Each grimpus is transparent. Every tumpus is a zumpus. Impuses are not brown. Every brimpus is not discordant. Wren is an impus. Wren is a wumpus.
 Question: Is Wren brown?
@@ -2222,8 +2222,8 @@ Wumpuses are lempuses. Every grimpus is bitter. Wumpuses are temperate. Every gr
 Question: Is Sally temperate?
 Think step-by-step.
 
-","['Sally is a wumpus.', 'Wumpuses are not temperate.', 'Sally is not temperate.']",True,"['Sally is a wumpus.', 'Wumpuses are lempuses.', 'Sally is lempuses.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a wumpus.', 'Wumpuses are not temperate.', 'Sally is not temperate.']",True,"['Sally is a wumpus.', 'Wumpuses are lempuses.', 'Sally is lempuses.']",False,False,C|S1-lose_not|S2-lose_not|
+16,"Answer True or False to the following question. Answer as in the examples.
 
 Lempuses are wumpuses. Every lempus is a gorpus. Zumpuses are rompuses. Each impus is a dumpus. Lorpuses are melodic. Each lorpus is a brimpus. Dumpuses are liquid. Rompuses are not nervous. Impuses are sunny. Each gorpus is a jompus. Every lempus is bitter. Each gorpus is a grimpus. Each jompus is not transparent. Every wumpus is not blue. Each zumpus is dull. Each zumpus is a lempus. Each gorpus is moderate. Every impus is a zumpus. Wren is a lorpus. Wren is a lempus.
 Question: Is Wren bitter?
@@ -2361,8 +2361,8 @@ Brimpuses are rainy. Brimpuses are sterpuses. Each lorpus is a rompus. Each lemp
 Question: Is Stella rainy?
 Think step-by-step.
 
-","['Stella is a brimpus.', 'Brimpuses are not rainy.', 'Stella is not rainy.']",False,"['Stella is a brimpus.', 'Brimpuses are not rainy.', 'Stella is not rainy.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a brimpus.', 'Brimpuses are not rainy.', 'Stella is not rainy.']",False,"['Stella is a brimpus.', 'Brimpuses are not rainy.', 'Stella is not rainy.']",True,True,C|C|C|
+17,"Answer True or False to the following question. Answer as in the examples.
 
 Every shumpus is opaque. Gorpuses are numpuses. Numpuses are brown. Lorpuses are not earthy. Jompuses are small. Each numpus is a shumpus. Each gorpus is a jompus. Lorpuses are tumpuses. Each gorpus is wooden. Shumpuses are wumpuses. Every shumpus is a zumpus. Each wumpus is not fast. Impuses are not cold. Numpuses are impuses. Rex is a numpus. Rex is a lorpus.
 Question: Is Rex brown?
@@ -2500,8 +2500,8 @@ Impuses are rainy. Grimpuses are moderate. Each lempus is an impus. Tumpuses are
 Question: Is Wren blue?
 Think step-by-step.
 
-","['Wren is a tumpus.', 'Tumpuses are blue.', 'Wren is blue.']",True,"['Wren is a tumpus.', 'Tumpuses are blue.', 'Wren is blue.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Wren is a tumpus.', 'Tumpuses are blue.', 'Wren is blue.']",True,"['Wren is a tumpus.', 'Tumpuses are blue.', 'Wren is blue.']",True,True,C|C|C|
+18,"Answer True or False to the following question. Answer as in the examples.
 
 Numpuses are rompuses. Each dumpus is sour. Numpuses are earthy. Jompuses are lorpuses. Jompuses are small. Jompuses are dumpuses. Fae is a numpus. Fae is a jompus.
 Question: Is Fae small?
@@ -2639,8 +2639,8 @@ Gorpuses are bitter. Each vumpus is luminous. Each sterpus is a yumpus. Each dum
 Question: Is Sam aggressive?
 Think step-by-step.
 
-","['Sam is a brimpus.', 'Every brimpus is aggressive.', 'Sam is aggressive.']",True,"['Sam is a brimpus.', 'Brimpuses are aggressive.', 'Sam is aggressive.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a brimpus.', 'Every brimpus is aggressive.', 'Sam is aggressive.']",True,"['Sam is a brimpus.', 'Brimpuses are aggressive.', 'Sam is aggressive.']",True,False,C|S1-miss_a|C|
+19,"Answer True or False to the following question. Answer as in the examples.
 
 Every sterpus is not sweet. Grimpuses are luminous. Brimpuses are gorpuses. Each tumpus is fruity. Each shumpus is a sterpus. Shumpuses are not melodic. Dumpuses are lempuses. Brimpuses are vumpuses. Shumpuses are jompuses. Each vumpus is feisty. Grimpuses are shumpuses. Each gorpus is a grimpus. Every dumpus is not moderate. Every grimpus is a wumpus. Brimpuses are dull. Gorpuses are not transparent. Gorpuses are tumpuses. Each wumpus is hot. Sally is a gorpus. Sally is a dumpus.
 Question: Is Sally transparent?
@@ -2778,8 +2778,8 @@ Zumpuses are rompuses. Every grimpus is not earthy. Grimpuses are yumpuses. Each
 Question: Is Fae earthy?
 Think step-by-step.
 
-","['Fae is a grimpus.', 'Every grimpus is earthy.', 'Fae is earthy.']",True,"['Fae is a grimpus.', 'Every grimpus is earthy.', 'Fae is earthy.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Fae is a grimpus.', 'Every grimpus is earthy.', 'Fae is earthy.']",True,"['Fae is a grimpus.', 'Every grimpus is earthy.', 'Fae is earthy.']",True,True,C|C|C|
+20,"Answer True or False to the following question. Answer as in the examples.
 
 Rompuses are brimpuses. Dumpuses are vumpuses. Rompuses are gorpuses. Dumpuses are blue. Each numpus is discordant. Every numpus is a rompus. Every tumpus is spicy. Every brimpus is not transparent. Each numpus is a tumpus. Each rompus is not dull. Fae is a rompus. Fae is a dumpus.
 Question: Is Fae dull?
@@ -2917,8 +2917,8 @@ Each numpus is a dumpus. Numpuses are angry. Every tumpus is not bright. Every v
 Question: Is Polly bright?
 Think step-by-step.
 
-","['Polly is a tumpus.', 'Every tumpus is bright.', 'Polly is bright.']",False,"['Polly is a numpus.', 'Each numpus is a dumpus.', 'Polly is not bright.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Polly is a tumpus.', 'Every tumpus is bright.', 'Polly is bright.']",False,"['Polly is a numpus.', 'Each numpus is a dumpus.', 'Polly is not bright.']",False,False,S0|S1-s2s|S2-add_not|
+21,"Answer True or False to the following question. Answer as in the examples.
 
 Every tumpus is a shumpus. Each jompus is a grimpus. Every jompus is a lorpus. Tumpuses are brimpuses. Each grimpus is red. Jompuses are not luminous. Every lorpus is a tumpus. Every tumpus is sweet. Sterpuses are aggressive. Every lorpus is a yumpus. Lorpuses are floral. Each yumpus is dull. Sterpuses are gorpuses. Each shumpus is muffled. Polly is a jompus. Polly is a sterpus.
 Question: Is Polly luminous?
@@ -3056,8 +3056,8 @@ Lorpuses are yumpuses. Each zumpus is nervous. Each dumpus is an impus. Lorpuses
 Question: Is Stella earthy?
 Think step-by-step.
 
-","['Stella is a dumpus.', 'Dumpuses are not earthy.', 'Stella is not earthy.']",True,"['Stella is a zumpus.', 'Every zumpus is earthy.', 'Stella is earthy.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a dumpus.', 'Dumpuses are not earthy.', 'Stella is not earthy.']",True,"['Stella is a zumpus.', 'Every zumpus is earthy.', 'Stella is earthy.']",False,False,S0|S1-lose_not|S2-lose_not|
+22,"Answer True or False to the following question. Answer as in the examples.
 
 Each rompus is a grimpus. Grimpuses are rainy. Every wumpus is a vumpus. Each rompus is not feisty. Every tumpus is a brimpus. Every wumpus is a gorpus. Wumpuses are bright. Each tumpus is earthy. Rompuses are wumpuses. Vumpuses are fast. Max is a wumpus. Max is a tumpus.
 Question: Is Max bright?
@@ -3195,8 +3195,8 @@ Zumpuses are jompuses. Dumpuses are opaque. Each lempus is large. Numpuses are n
 Question: Is Alex orange?
 Think step-by-step.
 
-","['Alex is a jompus.', 'Every jompus is orange.', 'Alex is orange.']",True,"['Alex is a numpus.', 'Numpuses are orange.', 'Alex is orange.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Alex is a jompus.', 'Every jompus is orange.', 'Alex is orange.']",True,"['Alex is a numpus.', 'Numpuses are orange.', 'Alex is orange.']",True,False,S0|S1-miss_a|C|
+23,"Answer True or False to the following question. Answer as in the examples.
 
 Each yumpus is a sterpus. Dumpuses are not cold. Every dumpus is a wumpus. Each yumpus is a grimpus. Every gorpus is not liquid. Wumpuses are sunny. Every sterpus is not orange. Dumpuses are yumpuses. Every yumpus is melodic. Each gorpus is an impus. Max is a dumpus. Max is a gorpus.
 Question: Is Max cold?
@@ -3334,8 +3334,8 @@ Lorpuses are windy. Sterpuses are vumpuses. Grimpuses are sterpuses. Grimpuses a
 Question: Is Max dull?
 Think step-by-step.
 
-","['Max is a grimpus.', 'Grimpuses are not dull.', 'Max is not dull.']",False,"['Max is a lempus.', 'Lempuses are not earthy.', 'Max is not earthy.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a grimpus.', 'Grimpuses are not dull.', 'Max is not dull.']",False,"['Max is a lempus.', 'Lempuses are not earthy.', 'Max is not earthy.']",True,False,S0|S1-miss_a|S2-miss_a|
+24,"Answer True or False to the following question. Answer as in the examples.
 
 Gorpuses are dumpuses. Jompuses are bright. Impuses are vumpuses. Gorpuses are jompuses. Gorpuses are not opaque. Impuses are not floral. Rex is a gorpus. Rex is an impus.
 Question: Is Rex opaque?
@@ -3473,8 +3473,8 @@ Gorpuses are not transparent. Each rompus is not luminous. Each numpus is a jomp
 Question: Is Rex nervous?
 Think step-by-step.
 
-","['Rex is a vumpus.', 'Vumpuses are nervous.', 'Rex is nervous.']",True,"['Rex is a vumpus.', 'Every vumpus is nervous.', 'Rex is nervous.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Rex is a vumpus.', 'Vumpuses are nervous.', 'Rex is nervous.']",True,"['Rex is a vumpus.', 'Every vumpus is nervous.', 'Rex is nervous.']",True,False,C|S1-miss_a|C|
+25,"Answer True or False to the following question. Answer as in the examples.
 
 Every yumpus is mean. Dumpuses are vumpuses. Vumpuses are not metallic. Every wumpus is not opaque. Every gorpus is a shumpus. Every dumpus is a yumpus. Brimpuses are nervous. Vumpuses are wumpuses. Gorpuses are lempuses. Every lorpus is not dull. Gorpuses are small. Each brimpus is an impus. Dumpuses are not spicy. Vumpuses are gorpuses. Each lorpus is a tumpus. Lorpuses are dumpuses. Every shumpus is melodic. Tumpuses are not windy. Sam is a brimpus. Sam is a lorpus.
 Question: Is Sam dull?
@@ -3612,8 +3612,8 @@ Every yumpus is an impus. Each sterpus is a rompus. Yumpuses are lorpuses. Yumpu
 Question: Is Sally hot?
 Think step-by-step.
 
-","['Sally is a yumpus.', 'Yumpuses are hot.', 'Sally is hot.']",False,"['Sally is a jompus.', 'Jompuses are vumpuses.', 'Sally is not hot.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a yumpus.', 'Yumpuses are hot.', 'Sally is hot.']",False,"['Sally is a jompus.', 'Jompuses are vumpuses.', 'Sally is not hot.']",False,False,S0|S1-miss_a|S2-add_not|
+26,"Answer True or False to the following question. Answer as in the examples.
 
 Each vumpus is not slow. Each vumpus is a grimpus. Every lorpus is sweet. Vumpuses are lorpuses. Gorpuses are lempuses. Each lempus is a rompus. Each grimpus is an impus. Gorpuses are yumpuses. Each wumpus is blue. Grimpuses are angry. Wumpuses are vumpuses. Wumpuses are zumpuses. Every grimpus is a brimpus. Gorpuses are opaque. Lempuses are wumpuses. Every lempus is not hot. Numpuses are dumpuses. Each numpus is loud. Rompuses are not bright. Each brimpus is not snowy. Each yumpus is not nervous. Each zumpus is not earthy. Rex is a lempus. Rex is a numpus.
 Question: Is Rex hot?
@@ -3751,8 +3751,8 @@ Every vumpus is sunny. Zumpuses are not fast. Each yumpus is dull. Each rompus i
 Question: Is Fae fruity?
 Think step-by-step.
 
-","['Fae is a rompus.', 'Rompuses are fruity.', 'Fae is fruity.']",True,"['Fae is a rompus.', 'Each rompus is a zumpus.', 'Fae is fruity.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Fae is a rompus.', 'Rompuses are fruity.', 'Fae is fruity.']",True,"['Fae is a rompus.', 'Each rompus is a zumpus.', 'Fae is fruity.']",True,False,C|S1-s2s|C|
+27,"Answer True or False to the following question. Answer as in the examples.
 
 Each shumpus is an impus. Yumpuses are sunny. Gorpuses are grimpuses. Zumpuses are melodic. Every gorpus is a lempus. Every yumpus is a zumpus. Shumpuses are mean. Vumpuses are liquid. Lempuses are transparent. Each wumpus is a vumpus. Each wumpus is cold. Gorpuses are slow. Yumpuses are wumpuses. Each wumpus is a gorpus. Alex is a gorpus. Alex is a shumpus.
 Question: Is Alex slow?
@@ -3890,8 +3890,8 @@ Every lempus is a gorpus. Gorpuses are snowy. Every lempus is a numpus. Each rom
 Question: Is Rex dull?
 Think step-by-step.
 
-","['Rex is a lempus.', 'Lempuses are dull.', 'Rex is dull.']",True,"['Rex is a rompus.', 'Every rompus is dull.', 'Rex is dull.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Rex is a lempus.', 'Lempuses are dull.', 'Rex is dull.']",True,"['Rex is a rompus.', 'Every rompus is dull.', 'Rex is dull.']",True,False,S0|S1-miss_a|C|
+28,"Answer True or False to the following question. Answer as in the examples.
 
 Rompuses are sour. Each lempus is a lorpus. Every rompus is a tumpus. Every lorpus is blue. Lempuses are luminous. Lempuses are yumpuses. Stella is a lempus. Stella is a rompus.
 Question: Is Stella luminous?
@@ -4029,8 +4029,8 @@ Each jompus is a shumpus. Grimpuses are blue. Shumpuses are cold. Each jompus is
 Question: Is Polly slow?
 Think step-by-step.
 
-","['Polly is a jompus.', 'Each jompus is slow.', 'Polly is slow.']",True,"['Polly is a rompus.', 'Each rompus is large.', 'Polly is large.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Polly is a jompus.', 'Each jompus is slow.', 'Polly is slow.']",True,"['Polly is a rompus.', 'Each rompus is large.', 'Polly is large.']",True,False,S0|S1-miss_a|S2-miss_a|
+29,"Answer True or False to the following question. Answer as in the examples.
 
 Impuses are not blue. Shumpuses are not fast. Impuses are vumpuses. Every shumpus is a jompus. Impuses are shumpuses. Shumpuses are lorpuses. Each lorpus is angry. Each dumpus is not temperate. Every dumpus is a lempus. Every vumpus is fruity. Stella is a shumpus. Stella is a dumpus.
 Question: Is Stella fast?
@@ -4168,8 +4168,8 @@ Each jompus is happy. Wumpuses are vumpuses. Each jompus is a wumpus. Grimpuses 
 Question: Is Stella moderate?
 Think step-by-step.
 
-","['Stella is a wumpus.', 'Wumpuses are not moderate.', 'Stella is not moderate.']",False,"['Stella is a grimpus.', 'Each grimpus is a gorpus.', 'Stella is not moderate.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a wumpus.', 'Wumpuses are not moderate.', 'Stella is not moderate.']",False,"['Stella is a grimpus.', 'Each grimpus is a gorpus.', 'Stella is not moderate.']",True,False,S0|S1-lose_not|C|
+30,"Answer True or False to the following question. Answer as in the examples.
 
 Each sterpus is a shumpus. Every sterpus is a jompus. Brimpuses are rainy. Jompuses are not sweet. Tumpuses are wooden. Brimpuses are wumpuses. Tumpuses are lorpuses. Each tumpus is a sterpus. Every sterpus is not transparent. Each lorpus is angry. Sam is a tumpus. Sam is a brimpus.
 Question: Is Sam wooden?
@@ -4307,8 +4307,8 @@ Gorpuses are transparent. Every numpus is a grimpus. Every yumpus is happy. Ever
 Question: Is Wren transparent?
 Think step-by-step.
 
-","['Wren is a gorpus.', 'Gorpuses are not transparent.', 'Wren is not transparent.']",False,"['Wren is a gorpus.', 'Every gorpus is transparent.', 'Wren is not transparent.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Wren is a gorpus.', 'Gorpuses are not transparent.', 'Wren is not transparent.']",False,"['Wren is a gorpus.', 'Every gorpus is transparent.', 'Wren is not transparent.']",True,False,C|S1-lose_not|C|
+31,"Answer True or False to the following question. Answer as in the examples.
 
 Every dumpus is kind. Grimpuses are vumpuses. Every shumpus is a brimpus. Each shumpus is opaque. Zumpuses are jompuses. Zumpuses are not fruity. Every dumpus is a wumpus. Every brimpus is wooden. Each shumpus is a dumpus. Every grimpus is hot. Dumpuses are yumpuses. Jompuses are not bitter. Each wumpus is moderate. Zumpuses are shumpuses. Alex is a zumpus. Alex is a grimpus.
 Question: Is Alex fruity?
@@ -4446,8 +4446,8 @@ Jompuses are shumpuses. Sterpuses are jompuses. Shumpuses are dumpuses. Every ro
 Question: Is Sally liquid?
 Think step-by-step.
 
-","['Sally is a sterpus.', 'Sterpuses are not liquid.', 'Sally is not liquid.']",False,"['Sally is a sterpus.', 'Sterpuses are not liquid.', 'Sally is not liquid.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a sterpus.', 'Sterpuses are not liquid.', 'Sally is not liquid.']",False,"['Sally is a sterpus.', 'Sterpuses are not liquid.', 'Sally is not liquid.']",True,True,C|C|C|
+32,"Answer True or False to the following question. Answer as in the examples.
 
 Each shumpus is not dull. Every gorpus is a shumpus. Gorpuses are brimpuses. Every sterpus is not windy. Each gorpus is wooden. Each sterpus is an impus. Alex is a gorpus. Alex is a sterpus.
 Question: Is Alex wooden?
@@ -4585,8 +4585,8 @@ Every yumpus is a brimpus. Brimpuses are zumpuses. Every tumpus is a gorpus. Eve
 Question: Is Wren snowy?
 Think step-by-step.
 
-","['Wren is a dumpus.', 'Dumpuses are snowy.', 'Wren is snowy.']",False,"['Wren is a tumpus.', 'Every tumpus is cold.', 'Wren is cold.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Wren is a dumpus.', 'Dumpuses are snowy.', 'Wren is snowy.']",False,"['Wren is a tumpus.', 'Every tumpus is cold.', 'Wren is cold.']",False,False,S0|S1-miss_a|S2-miss_a|
+33,"Answer True or False to the following question. Answer as in the examples.
 
 Each yumpus is a tumpus. Yumpuses are transparent. Each tumpus is sweet. Jompuses are bright. Each yumpus is a brimpus. Jompuses are zumpuses. Wren is a jompus. Wren is a yumpus.
 Question: Is Wren transparent?
@@ -4724,8 +4724,8 @@ Every tumpus is a brimpus. Rompuses are tumpuses. Each shumpus is earthy. Impuse
 Question: Is Stella earthy?
 Think step-by-step.
 
-","['Stella is a shumpus.', 'Each shumpus is not earthy.', 'Stella is not earthy.']",False,"['Stella is a shumpus.', 'Every shumpus is not earthy.', 'Stella is earthy.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a shumpus.', 'Each shumpus is not earthy.', 'Stella is not earthy.']",False,"['Stella is a shumpus.', 'Every shumpus is not earthy.', 'Stella is earthy.']",True,False,C|S1-miss_a|S2-lose_not|
+34,"Answer True or False to the following question. Answer as in the examples.
 
 Every lempus is not orange. Dumpuses are melodic. Jompuses are feisty. Each grimpus is opaque. Every rompus is a grimpus. Rompuses are lempuses. Every gorpus is aggressive. Every lempus is a jompus. Vumpuses are rompuses. Each lorpus is sour. Wumpuses are not hot. Yumpuses are wumpuses. Gorpuses are impuses. Each rompus is not moderate. Gorpuses are vumpuses. Every impus is not snowy. Yumpuses are gorpuses. Lempuses are brimpuses. Lorpuses are tumpuses. Every vumpus is not metallic. Yumpuses are fruity. Vumpuses are dumpuses. Rex is a lorpus. Rex is a lempus.
 Question: Is Rex orange?
@@ -4863,8 +4863,8 @@ Every rompus is a numpus. Lempuses are aggressive. Every dumpus is wooden. Each 
 Question: Is Max dull?
 Think step-by-step.
 
-","['Max is a rompus.', 'Rompuses are dull.', 'Max is dull.']",False,"['Max is a rompus.', 'Rompuses are dull.', 'Max is not dull.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a rompus.', 'Rompuses are dull.', 'Max is dull.']",False,"['Max is a rompus.', 'Rompuses are dull.', 'Max is not dull.']",False,False,C|C|S2-add_not|
+35,"Answer True or False to the following question. Answer as in the examples.
 
 Each grimpus is a jompus. Each wumpus is a yumpus. Zumpuses are impuses. Every wumpus is a lorpus. Zumpuses are snowy. Yumpuses are red. Yumpuses are sterpuses. Each yumpus is a tumpus. Grimpuses are floral. Each zumpus is a wumpus. Wumpuses are amenable. Each impus is slow. Each lorpus is dull. Tumpuses are loud. Wren is a yumpus. Wren is a grimpus.
 Question: Is Wren red?
@@ -5002,8 +5002,8 @@ Each sterpus is wooden. Shumpuses are sterpuses. Each zumpus is an impus. Every 
 Question: Is Stella happy?
 Think step-by-step.
 
-","['Stella is a yumpus.', 'Yumpuses are not happy.', 'Stella is not happy.']",False,"['Stella is a zumpus.', 'Zumpuses are not happy.', 'Stella is not happy.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a yumpus.', 'Yumpuses are not happy.', 'Stella is not happy.']",False,"['Stella is a zumpus.', 'Zumpuses are not happy.', 'Stella is not happy.']",True,False,S0|S1-miss_a|C|
+36,"Answer True or False to the following question. Answer as in the examples.
 
 Jompuses are grimpuses. Every tumpus is happy. Lorpuses are wooden. Zumpuses are brimpuses. Every brimpus is a tumpus. Every brimpus is a numpus. Each zumpus is dull. Brimpuses are spicy. Every jompus is aggressive. Zumpuses are lorpuses. Sally is a jompus. Sally is a zumpus.
 Question: Is Sally dull?
@@ -5141,8 +5141,8 @@ Lempuses are impuses. Each zumpus is brown. Every sterpus is a grimpus. Impuses 
 Question: Is Rex amenable?
 Think step-by-step.
 
-","['Rex is a lempus.', 'Lempuses are not amenable.', 'Rex is not amenable.']",False,"['Rex is a lempus.', 'Each lempus is not amenable.', 'Rex is not amenable.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Rex is a lempus.', 'Lempuses are not amenable.', 'Rex is not amenable.']",False,"['Rex is a lempus.', 'Each lempus is not amenable.', 'Rex is not amenable.']",True,False,C|S1-miss_a|C|
+37,"Answer True or False to the following question. Answer as in the examples.
 
 Every shumpus is not snowy. Every zumpus is a dumpus. Grimpuses are small. Zumpuses are not metallic. Every brimpus is a shumpus. Brimpuses are transparent. Each dumpus is not amenable. Lempuses are spicy. Zumpuses are lempuses. Tumpuses are orange. Sterpuses are tumpuses. Each sterpus is a brimpus. Brimpuses are vumpuses. Each shumpus is a lorpus. Each vumpus is fruity. Every impus is shy. Each sterpus is not dull. Jompuses are temperate. Each dumpus is a grimpus. Impuses are yumpuses. Each dumpus is a sterpus. Each shumpus is a jompus. Alex is an impus. Alex is a shumpus.
 Question: Is Alex snowy?
@@ -5280,8 +5280,8 @@ Shumpuses are dumpuses. Numpuses are brimpuses. Every yumpus is moderate. Yumpus
 Question: Is Sam angry?
 Think step-by-step.
 
-","['Sam is a numpus.', 'Every numpus is angry.', 'Sam is angry.']",True,"['Sam is a numpus.', 'Numpuses are yumpuses.', 'Sam is angry.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a numpus.', 'Every numpus is angry.', 'Sam is angry.']",True,"['Sam is a numpus.', 'Numpuses are yumpuses.', 'Sam is angry.']",True,False,C|S1-miss_a|C|
+38,"Answer True or False to the following question. Answer as in the examples.
 
 Every dumpus is a zumpus. Each yumpus is a jompus. Every dumpus is liquid. Dumpuses are wumpuses. Wumpuses are floral. Each yumpus is amenable. Wren is a dumpus. Wren is a yumpus.
 Question: Is Wren liquid?
@@ -5419,8 +5419,8 @@ Yumpuses are gorpuses. Dumpuses are not small. Sterpuses are not happy. Every yu
 Question: Is Max small?
 Think step-by-step.
 
-","['Max is a dumpus.', 'Dumpuses are small.', 'Max is small.']",True,"['Max is a dumpus.', 'Every dumpus is a lempus.', 'Max is a lempus.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a dumpus.', 'Dumpuses are small.', 'Max is small.']",True,"['Max is a dumpus.', 'Every dumpus is a lempus.', 'Max is a lempus.']",True,False,C|S1-s2s|S2-s4a|
+39,"Answer True or False to the following question. Answer as in the examples.
 
 Brimpuses are wooden. Every dumpus is feisty. Vumpuses are large. Every shumpus is a wumpus. Numpuses are dull. Jompuses are sterpuses. Rompuses are not mean. Rompuses are vumpuses. Each vumpus is a tumpus. Each jompus is not earthy. Wumpuses are dumpuses. Each vumpus is a brimpus. Rompuses are numpuses. Wumpuses are rompuses. Shumpuses are slow. Each lempus is transparent. Each wumpus is brown. Shumpuses are lempuses. Max is a rompus. Max is a jompus.
 Question: Is Max mean?
@@ -5558,8 +5558,8 @@ Every jompus is cold. Dumpuses are not mean. Sterpuses are vumpuses. Grimpuses a
 Question: Is Sam mean?
 Think step-by-step.
 
-","['Sam is a dumpus.', 'Dumpuses are mean.', 'Sam is mean.']",False,"['Sam is a sterpus.', 'Sterpuses are vumpuses.', 'Sam is vumpus.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a dumpus.', 'Dumpuses are mean.', 'Sam is mean.']",False,"['Sam is a sterpus.', 'Sterpuses are vumpuses.', 'Sam is vumpus.']",False,False,S0|S1-miss_a|S2-s4a|
+40,"Answer True or False to the following question. Answer as in the examples.
 
 Every yumpus is a lorpus. Lorpuses are windy. Numpuses are yumpuses. Each numpus is a dumpus. Zumpuses are brimpuses. Every jompus is fruity. Dumpuses are not small. Lempuses are transparent. Each yumpus is an impus. Zumpuses are temperate. Every lempus is a numpus. Numpuses are not muffled. Yumpuses are luminous. Lempuses are jompuses. Max is a zumpus. Max is a numpus.
 Question: Is Max muffled?
@@ -5697,8 +5697,8 @@ Tumpuses are not fruity. Every shumpus is luminous. Zumpuses are large. Every go
 Question: Is Sam nervous?
 Think step-by-step.
 
-","['Sam is a lorpus.', 'Each lorpus is nervous.', 'Sam is nervous.']",False,"['Sam is a rompus.', 'Each rompus is not fast.', 'Sam is not fast.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a lorpus.', 'Each lorpus is nervous.', 'Sam is nervous.']",False,"['Sam is a rompus.', 'Each rompus is not fast.', 'Sam is not fast.']",False,False,S0|S1-add_not|S2-add_not|
+41,"Answer True or False to the following question. Answer as in the examples.
 
 Every wumpus is not slow. Wumpuses are tumpuses. Each rompus is nervous. Sterpuses are rompuses. Sterpuses are shumpuses. Every sterpus is not earthy. Max is a wumpus. Max is a sterpus.
 Question: Is Max earthy?
@@ -5836,8 +5836,8 @@ Yumpuses are hot. Jompuses are vumpuses. Each zumpus is dull. Every brimpus is n
 Question: Is Max fruity?
 Think step-by-step.
 
-","['Max is a brimpus.', 'Every brimpus is fruity.', 'Max is fruity.']",True,"['Max is a brimpus.', 'Brimpuses are fruity.', 'Max is fruity.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a brimpus.', 'Every brimpus is fruity.', 'Max is fruity.']",True,"['Max is a brimpus.', 'Brimpuses are fruity.', 'Max is fruity.']",True,False,C|S1-miss_a|C|
+42,"Answer True or False to the following question. Answer as in the examples.
 
 Numpuses are not loud. Jompuses are grimpuses. Jompuses are mean. Every lempus is opaque. Every sterpus is a vumpus. Every vumpus is wooden. Vumpuses are rompuses. Every sterpus is not fast. Every vumpus is a lempus. Each sterpus is a numpus. Sally is a vumpus. Sally is a jompus.
 Question: Is Sally wooden?
@@ -5975,8 +5975,8 @@ Every brimpus is a zumpus. Each lorpus is a rompus. Each rompus is a vumpus. Eac
 Question: Is Wren floral?
 Think step-by-step.
 
-","['Wren is a numpus.', 'Each numpus is not floral.', 'Wren is not floral.']",False,"['Wren is a brimpus.', 'Every brimpus is a zumpus.', 'Wren is floral.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Wren is a numpus.', 'Each numpus is not floral.', 'Wren is not floral.']",False,"['Wren is a brimpus.', 'Every brimpus is a zumpus.', 'Wren is floral.']",True,False,S0|S1-lose_not|S2-lose_not|
+43,"Answer True or False to the following question. Answer as in the examples.
 
 Gorpuses are not mean. Lempuses are not wooden. Numpuses are yumpuses. Gorpuses are numpuses. Every yumpus is not opaque. Brimpuses are not fast. Dumpuses are wumpuses. Every dumpus is a jompus. Dumpuses are earthy. Sterpuses are not large. Every numpus is discordant. Wumpuses are temperate. Wumpuses are lempuses. Every sterpus is a vumpus. Each numpus is a dumpus. Shumpuses are brimpuses. Shumpuses are impuses. Rompuses are rainy. Gorpuses are rompuses. Each shumpus is not bright. Jompuses are not sour. Every wumpus is a shumpus. Max is a sterpus. Max is a wumpus.
 Question: Is Max temperate?
@@ -6114,8 +6114,8 @@ Each lorpus is not sweet. Each yumpus is dull. Each vumpus is fast. Yumpuses are
 Question: Is Max red?
 Think step-by-step.
 
-","['Max is a dumpus.', 'Dumpuses are red.', 'Max is red.']",False,"['Max is a yumpus.', 'Yumpuses are red.', 'Max is red.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a dumpus.', 'Dumpuses are red.', 'Max is red.']",False,"['Max is a yumpus.', 'Yumpuses are red.', 'Max is red.']",False,False,S0|S1-miss_a|C|
+44,"Answer True or False to the following question. Answer as in the examples.
 
 Brimpuses are not melodic. Each jompus is a brimpus. Jompuses are numpuses. Numpuses are bright. Each dumpus is kind. Every zumpus is not hot. Numpuses are zumpuses. Each numpus is a yumpus. Jompuses are blue. Dumpuses are rompuses. Max is a numpus. Max is a dumpus.
 Question: Is Max bright?
@@ -6253,8 +6253,8 @@ Tumpuses are small. Each brimpus is not kind. Shumpuses are vumpuses. Brimpuses 
 Question: Is Max small?
 Think step-by-step.
 
-","['Max is a tumpus.', 'Tumpuses are not small.', 'Max is not small.']",False,"['Max is a tumpus.', 'Each tumpus is small.', 'Max is small.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a tumpus.', 'Tumpuses are not small.', 'Max is not small.']",False,"['Max is a tumpus.', 'Each tumpus is small.', 'Max is small.']",True,False,C|S1-lose_not|S2-lose_not|
+45,"Answer True or False to the following question. Answer as in the examples.
 
 Every lorpus is a sterpus. Grimpuses are opaque. Every jompus is a numpus. Every zumpus is moderate. Every zumpus is a wumpus. Lorpuses are cold. Wumpuses are feisty. Each dumpus is bitter. Jompuses are not floral. Each rompus is not red. Every zumpus is an impus. Sterpuses are grimpuses. Each sterpus is a zumpus. Each numpus is not dull. Jompuses are lorpuses. Sterpuses are not overcast. Each lorpus is a rompus. Every dumpus is a vumpus. Stella is a dumpus. Stella is a jompus.
 Question: Is Stella floral?
@@ -6392,8 +6392,8 @@ Every brimpus is fast. Each shumpus is not nervous. Sterpuses are brimpuses. Eac
 Question: Is Stella bright?
 Think step-by-step.
 
-","['Stella is a sterpus.', 'Each sterpus is bright.', 'Stella is bright.']",True,"['Stella is a dumpus.', 'Dumpuses are angry.', 'Stella is not angry.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a sterpus.', 'Each sterpus is bright.', 'Stella is bright.']",True,"['Stella is a dumpus.', 'Dumpuses are angry.', 'Stella is not angry.']",True,False,S0|S1-miss_a|S2-add_not|
+46,"Answer True or False to the following question. Answer as in the examples.
 
 Every sterpus is metallic. Every lorpus is sour. Each sterpus is a lorpus. Sterpuses are grimpuses. Every lempus is temperate. Lempuses are dumpuses. Rex is a sterpus. Rex is a lempus.
 Question: Is Rex metallic?
@@ -6531,8 +6531,8 @@ Every grimpus is not small. Each grimpus is an impus. Lempuses are shy. Shumpuse
 Question: Is Alex muffled?
 Think step-by-step.
 
-","['Alex is a shumpus.', 'Every shumpus is not muffled.', 'Alex is not muffled.']",False,"['Alex is a shumpus.', 'Each shumpus is not muffled.', 'Alex is not muffled.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Alex is a shumpus.', 'Every shumpus is not muffled.', 'Alex is not muffled.']",False,"['Alex is a shumpus.', 'Each shumpus is not muffled.', 'Alex is not muffled.']",True,False,C|S1-miss_a|C|
+47,"Answer True or False to the following question. Answer as in the examples.
 
 Every gorpus is an impus. Gorpuses are melodic. Every zumpus is a jompus. Numpuses are not temperate. Each dumpus is not fruity. Lorpuses are not metallic. Every sterpus is a lorpus. Zumpuses are happy. Jompuses are not bitter. Shumpuses are not brown. Each jompus is a dumpus. Jompuses are grimpuses. Numpuses are wumpuses. Sterpuses are bright. Tumpuses are transparent. Every sterpus is a zumpus. Each wumpus is amenable. Every wumpus is a shumpus. Each zumpus is a rompus. Numpuses are tumpuses. Each wumpus is a sterpus. Rompuses are not small. Sally is a gorpus. Sally is a wumpus.
 Question: Is Sally amenable?
@@ -6670,8 +6670,8 @@ Each vumpus is not slow. Numpuses are metallic. Every vumpus is an impus. Every 
 Question: Is Wren slow?
 Think step-by-step.
 
-","['Wren is a vumpus.', 'Each vumpus is slow.', 'Wren is slow.']",True,"['Wren is a rompus.', 'Each rompus is slow.', 'Wren is slow.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Wren is a vumpus.', 'Each vumpus is slow.', 'Wren is slow.']",True,"['Wren is a rompus.', 'Each rompus is slow.', 'Wren is slow.']",True,False,S0|S1-miss_a|C|
+48,"Answer True or False to the following question. Answer as in the examples.
 
 Shumpuses are feisty. Every dumpus is small. Each zumpus is dull. Each shumpus is a numpus. Every sterpus is muffled. Each sterpus is a lempus. Every zumpus is an impus. Every zumpus is a shumpus. Each impus is slow. Shumpuses are dumpuses. Max is a sterpus. Max is a shumpus.
 Question: Is Max feisty?
@@ -6809,8 +6809,8 @@ Rompuses are angry. Rompuses are vumpuses. Brimpuses are impuses. Every impus is
 Question: Is Stella floral?
 Think step-by-step.
 
-","['Stella is a brimpus.', 'Each brimpus is floral.', 'Stella is floral.']",True,"['Stella is a brimpus.', 'Each brimpus is floral.', 'Stella is floral.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a brimpus.', 'Each brimpus is floral.', 'Stella is floral.']",True,"['Stella is a brimpus.', 'Each brimpus is floral.', 'Stella is floral.']",True,True,C|C|C|
+49,"Answer True or False to the following question. Answer as in the examples.
 
 Grimpuses are sour. Yumpuses are numpuses. Each wumpus is not liquid. Every grimpus is a zumpus. Lorpuses are bright. Each impus is not angry. Yumpuses are fast. Gorpuses are grimpuses. Every sterpus is large. Every sterpus is an impus. Gorpuses are brown. Each grimpus is a lorpus. Sterpuses are gorpuses. Gorpuses are wumpuses. Rex is a yumpus. Rex is a grimpus.
 Question: Is Rex sour?
@@ -6948,8 +6948,8 @@ Yumpuses are opaque. Every impus is not dull. Each rompus is a gorpus. Each romp
 Question: Is Sam large?
 Think step-by-step.
 
-","['Sam is a rompus.', 'Each rompus is not large.', 'Sam is not large.']",False,"['Sam is a shumpus.', 'Each shumpus is snowy.', 'Sam is not snowy.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a rompus.', 'Each rompus is not large.', 'Sam is not large.']",False,"['Sam is a shumpus.', 'Each shumpus is snowy.', 'Sam is not snowy.']",True,False,S0|S1-lose_not|S2-miss_a|
+50,"Answer True or False to the following question. Answer as in the examples.
 
 Every dumpus is a rompus. Every zumpus is an impus. Yumpuses are lempuses. Every lempus is red. Every grimpus is a numpus. Every grimpus is opaque. Every yumpus is sweet. Wumpuses are not amenable. Dumpuses are floral. Every vumpus is cold. Every dumpus is a gorpus. Vumpuses are dumpuses. Every zumpus is a vumpus. Impuses are wooden. Each zumpus is not loud. Each yumpus is a zumpus. Rompuses are bright. Vumpuses are wumpuses. Alex is a yumpus. Alex is a grimpus.
 Question: Is Alex sweet?
@@ -7087,8 +7087,8 @@ Every grimpus is mean. Every shumpus is slow. Lempuses are blue. Shumpuses are l
 Question: Is Polly slow?
 Think step-by-step.
 
-","['Polly is a shumpus.', 'Every shumpus is not slow.', 'Polly is not slow.']",True,"['Polly is a shumpus.', 'Every shumpus is not slow.', 'Polly is not slow.']",False,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Polly is a shumpus.', 'Every shumpus is not slow.', 'Polly is not slow.']",True,"['Polly is a shumpus.', 'Every shumpus is not slow.', 'Polly is not slow.']",False,True,C|C|C|
+51,"Answer True or False to the following question. Answer as in the examples.
 
 Each dumpus is a brimpus. Dumpuses are shy. Yumpuses are grimpuses. Lempuses are discordant. Gorpuses are red. Each wumpus is bitter. Every yumpus is sunny. Grimpuses are not temperate. Numpuses are sterpuses. Each vumpus is a gorpus. Tumpuses are vumpuses. Each gorpus is a jompus. Vumpuses are lempuses. Every dumpus is a yumpus. Shumpuses are small. Numpuses are not amenable. Every brimpus is not wooden. Tumpuses are not bright. Every vumpus is not fruity. Yumpuses are tumpuses. Tumpuses are shumpuses. Each gorpus is a wumpus. Polly is a dumpus. Polly is a numpus.
 Question: Is Polly shy?
@@ -7226,8 +7226,8 @@ Jompuses are lorpuses. Sterpuses are tumpuses. Sterpuses are gorpuses. Every gor
 Question: Is Polly sour?
 Think step-by-step.
 
-","['Polly is a sterpus.', 'Sterpuses are sour.', 'Polly is sour.']",True,"['Polly is a sterpus.', 'Sterpuses are sour.', 'Polly is sour.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Polly is a sterpus.', 'Sterpuses are sour.', 'Polly is sour.']",True,"['Polly is a sterpus.', 'Sterpuses are sour.', 'Polly is sour.']",True,True,C|C|C|
+52,"Answer True or False to the following question. Answer as in the examples.
 
 Gorpuses are feisty. Every lempus is not metallic. Brimpuses are lempuses. Each brimpus is not small. Each gorpus is a yumpus. Brimpuses are rompuses. Stella is a gorpus. Stella is a brimpus.
 Question: Is Stella small?
@@ -7365,8 +7365,8 @@ Rompuses are not fast. Dumpuses are numpuses. Every wumpus is a rompus. Wumpuses
 Question: Is Max shy?
 Think step-by-step.
 
-","['Max is a zumpus.', 'Zumpuses are shy.', 'Max is shy.']",True,"['Max is a zumpus.', 'Zumpuses are shy.', 'Max is shy.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a zumpus.', 'Zumpuses are shy.', 'Max is shy.']",True,"['Max is a zumpus.', 'Zumpuses are shy.', 'Max is shy.']",True,True,C|C|C|
+53,"Answer True or False to the following question. Answer as in the examples.
 
 Tumpuses are jompuses. Tumpuses are brimpuses. Sterpuses are vumpuses. Every vumpus is discordant. Each brimpus is a sterpus. Jompuses are not moderate. Each tumpus is opaque. Lempuses are bitter. Gorpuses are not cold. Gorpuses are lorpuses. Every brimpus is a lempus. Every sterpus is a zumpus. Each sterpus is earthy. Each brimpus is dull. Max is a gorpus. Max is a brimpus.
 Question: Is Max dull?
@@ -7504,8 +7504,8 @@ Vumpuses are aggressive. Impuses are fruity. Lorpuses are bright. Each impus is 
 Question: Is Wren fruity?
 Think step-by-step.
 
-","['Wren is an impus.', 'Impuses are not fruity.', 'Wren is not fruity.']",False,"['Wren is a vumpus.', 'Every vumpus is a sterpus.', 'Wren is not fruity.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Wren is an impus.', 'Impuses are not fruity.', 'Wren is not fruity.']",False,"['Wren is a vumpus.', 'Every vumpus is a sterpus.', 'Wren is not fruity.']",True,False,S0|S1-lose_not|C|
+54,"Answer True or False to the following question. Answer as in the examples.
 
 Every rompus is small. Each grimpus is a gorpus. Sterpuses are rompuses. Each sterpus is a vumpus. Each sterpus is not feisty. Grimpuses are snowy. Fae is a sterpus. Fae is a grimpus.
 Question: Is Fae feisty?
@@ -7643,8 +7643,8 @@ Tumpuses are not windy. Lempuses are bitter. Every shumpus is a zumpus. Each dum
 Question: Is Max opaque?
 Think step-by-step.
 
-","['Max is a brimpus.', 'Each brimpus is not opaque.', 'Max is not opaque.']",False,"['Max is a brimpus.', 'Each brimpus is not opaque.', 'Max is not opaque.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a brimpus.', 'Each brimpus is not opaque.', 'Max is not opaque.']",False,"['Max is a brimpus.', 'Each brimpus is not opaque.', 'Max is not opaque.']",True,True,C|C|C|
+55,"Answer True or False to the following question. Answer as in the examples.
 
 Zumpuses are brimpuses. Each lorpus is a shumpus. Gorpuses are not sour. Each shumpus is a tumpus. Lorpuses are numpuses. Impuses are angry. Every lorpus is dull. Tumpuses are not melodic. Every gorpus is a grimpus. Every gorpus is a lorpus. Zumpuses are temperate. Every shumpus is windy. Impuses are vumpuses. Vumpuses are not slow. Each shumpus is a yumpus. Impuses are gorpuses. Numpuses are not earthy. Every grimpus is small. Sam is a gorpus. Sam is a zumpus.
 Question: Is Sam sour?
@@ -7782,8 +7782,8 @@ Each numpus is overcast. Yumpuses are not aggressive. Rompuses are not shy. Each
 Question: Is Fae floral?
 Think step-by-step.
 
-","['Fae is a jompus.', 'Jompuses are floral.', 'Fae is floral.']",True,"['Fae is a jompus.', 'Every jompus is floral.', 'Fae is floral.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Fae is a jompus.', 'Jompuses are floral.', 'Fae is floral.']",True,"['Fae is a jompus.', 'Every jompus is floral.', 'Fae is floral.']",True,False,C|S1-miss_a|C|
+56,"Answer True or False to the following question. Answer as in the examples.
 
 Brimpuses are sterpuses. Each sterpus is nervous. Brimpuses are zumpuses. Each zumpus is floral. Sterpuses are vumpuses. Every gorpus is small. Vumpuses are grimpuses. Sterpuses are gorpuses. Numpuses are rompuses. Tumpuses are mean. Brimpuses are not fast. Each vumpus is a tumpus. Numpuses are sour. Every vumpus is metallic. Wren is a vumpus. Wren is a numpus.
 Question: Is Wren metallic?
@@ -7921,8 +7921,8 @@ Grimpuses are orange. Jompuses are grimpuses. Dumpuses are floral. Jompuses are 
 Question: Is Stella muffled?
 Think step-by-step.
 
-","['Stella is a jompus.', 'Jompuses are not muffled.', 'Stella is not muffled.']",False,"['Stella is a dumpus.', 'Dumpuses are muffled.', 'Stella is muffled.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a jompus.', 'Jompuses are not muffled.', 'Stella is not muffled.']",False,"['Stella is a dumpus.', 'Dumpuses are muffled.', 'Stella is muffled.']",True,False,S0|S1-lose_not|S2-lose_not|
+57,"Answer True or False to the following question. Answer as in the examples.
 
 Each lorpus is not happy. Zumpuses are moderate. Each shumpus is a rompus. Every rompus is not opaque. Each grimpus is large. Every rompus is a sterpus. Yumpuses are gorpuses. Shumpuses are not orange. Every jompus is a yumpus. Every shumpus is a lempus. Gorpuses are bitter. Every gorpus is a vumpus. Sterpuses are discordant. Every yumpus is a zumpus. Every lempus is not aggressive. Jompuses are grimpuses. Gorpuses are numpuses. Rompuses are jompuses. Each lorpus is an impus. Each yumpus is not earthy. Each jompus is bright. Every vumpus is overcast. Rex is a lorpus. Rex is a rompus.
 Question: Is Rex opaque?
@@ -8060,8 +8060,8 @@ Vumpuses are rainy. Dumpuses are wumpuses. Sterpuses are dull. Numpuses are not 
 Question: Is Sam bitter?
 Think step-by-step.
 
-","['Sam is a dumpus.', 'Each dumpus is bitter.', 'Sam is bitter.']",False,"['Sam is a dumpus.', 'Dumpuses are bitter.', 'Sam is bitter.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a dumpus.', 'Each dumpus is bitter.', 'Sam is bitter.']",False,"['Sam is a dumpus.', 'Dumpuses are bitter.', 'Sam is bitter.']",False,False,C|S1-miss_a|C|
+58,"Answer True or False to the following question. Answer as in the examples.
 
 Brimpuses are yumpuses. Grimpuses are sterpuses. Each brimpus is a jompus. Each impus is small. Vumpuses are impuses. Every vumpus is a dumpus. Each grimpus is temperate. Each vumpus is sour. Every shumpus is not transparent. Every dumpus is sunny. Impuses are wumpuses. Shumpuses are numpuses. Every brimpus is not nervous. Every shumpus is a brimpus. Every wumpus is mean. Yumpuses are liquid. Numpuses are not floral. Every impus is a shumpus. Polly is an impus. Polly is a grimpus.
 Question: Is Polly small?
@@ -8199,8 +8199,8 @@ Every impus is a lorpus. Dumpuses are hot. Lempuses are not bright. Yumpuses are
 Question: Is Stella floral?
 Think step-by-step.
 
-","['Stella is an impus.', 'Every impus is floral.', 'Stella is floral.']",True,"['Stella is a yumpus.', 'Every yumpus is a jompus.', 'Stella is a jompus.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is an impus.', 'Every impus is floral.', 'Stella is floral.']",True,"['Stella is a yumpus.', 'Every yumpus is a jompus.', 'Stella is a jompus.']",True,False,S0|S1-s2s|S2-s4a|
+59,"Answer True or False to the following question. Answer as in the examples.
 
 Every vumpus is not loud. Every lempus is not slow. Each lempus is a wumpus. Every lorpus is earthy. Vumpuses are sterpuses. Lempuses are lorpuses. Alex is a lempus. Alex is a vumpus.
 Question: Is Alex slow?
@@ -8338,8 +8338,8 @@ Zumpuses are wumpuses. Every vumpus is not feisty. Zumpuses are not transparent.
 Question: Is Sally feisty?
 Think step-by-step.
 
-","['Sally is a vumpus.', 'Every vumpus is feisty.', 'Sally is feisty.']",True,"['Sally is a vumpus.', 'Every vumpus is feisty.', 'Sally is feisty.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a vumpus.', 'Every vumpus is feisty.', 'Sally is feisty.']",True,"['Sally is a vumpus.', 'Every vumpus is feisty.', 'Sally is feisty.']",True,True,C|C|C|
+60,"Answer True or False to the following question. Answer as in the examples.
 
 Every gorpus is shy. Each wumpus is not dull. Jompuses are rainy. Each wumpus is a jompus. Wumpuses are dumpuses. Every gorpus is a sterpus. Polly is a wumpus. Polly is a gorpus.
 Question: Is Polly dull?
@@ -8477,8 +8477,8 @@ Jompuses are shumpuses. Jompuses are zumpuses. Each zumpus is sour. Each jompus 
 Question: Is Sally floral?
 Think step-by-step.
 
-","['Sally is a jompus.', 'Each jompus is not floral.', 'Sally is not floral.']",False,"['Sally is a jompus.', 'Every jompus is floral.', 'Sally is floral.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a jompus.', 'Each jompus is not floral.', 'Sally is not floral.']",False,"['Sally is a jompus.', 'Every jompus is floral.', 'Sally is floral.']",True,False,C|S1-lose_not|S2-lose_not|
+61,"Answer True or False to the following question. Answer as in the examples.
 
 Impuses are vumpuses. Each sterpus is not large. Each impus is a sterpus. Impuses are opaque. Each wumpus is not spicy. Wumpuses are brimpuses. Fae is a wumpus. Fae is an impus.
 Question: Is Fae opaque?
@@ -8616,8 +8616,8 @@ Every lempus is a jompus. Rompuses are numpuses. Every impus is a grimpus. Every
 Question: Is Polly nervous?
 Think step-by-step.
 
-","['Polly is a rompus.', 'Every rompus is nervous.', 'Polly is nervous.']",True,"['Polly is a vumpus.', 'Each vumpus is not mean.', 'Polly is not mean.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Polly is a rompus.', 'Every rompus is nervous.', 'Polly is nervous.']",True,"['Polly is a vumpus.', 'Each vumpus is not mean.', 'Polly is not mean.']",True,False,S0|S1-add_not|S2-add_not|
+62,"Answer True or False to the following question. Answer as in the examples.
 
 Each rompus is temperate. Zumpuses are lempuses. Brimpuses are mean. Wumpuses are small. Each brimpus is a yumpus. Each zumpus is a brimpus. Each brimpus is a wumpus. Each zumpus is not sunny. Each rompus is a dumpus. Lempuses are luminous. Polly is a zumpus. Polly is a rompus.
 Question: Is Polly sunny?
@@ -8755,8 +8755,8 @@ Lempuses are not nervous. Grimpuses are not fast. Each sterpus is a gorpus. Ever
 Question: Is Polly brown?
 Think step-by-step.
 
-","['Polly is a rompus.', 'Rompuses are not brown.', 'Polly is not brown.']",True,"['Polly is a shumpus.', 'Shumpuses are brown.', 'Polly is brown.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Polly is a rompus.', 'Rompuses are not brown.', 'Polly is not brown.']",True,"['Polly is a shumpus.', 'Shumpuses are brown.', 'Polly is brown.']",False,False,S0|S1-lose_not|S2-lose_not|
+63,"Answer True or False to the following question. Answer as in the examples.
 
 Each rompus is a zumpus. Every zumpus is sweet. Brimpuses are vumpuses. Every sterpus is not earthy. Each gorpus is not muffled. Yumpuses are not moderate. Each impus is cold. Each dumpus is a numpus. Lempuses are rompuses. Every brimpus is dull. Lempuses are shumpuses. Every dumpus is an impus. Each shumpus is large. Impuses are sterpuses. Brimpuses are yumpuses. Rompuses are amenable. Rompuses are dumpuses. Every dumpus is not overcast. Each gorpus is a jompus. Every lempus is wooden. Every impus is a brimpus. Numpuses are opaque. Fae is a dumpus. Fae is a gorpus.
 Question: Is Fae overcast?
@@ -8894,8 +8894,8 @@ Every yumpus is a jompus. Each dumpus is a numpus. Dumpuses are not luminous. Ea
 Question: Is Wren luminous?
 Think step-by-step.
 
-","['Wren is a dumpus.', 'Dumpuses are luminous.', 'Wren is luminous.']",True,"['Wren is a yumpus.', 'Every yumpus is a jompus.', 'Wren is luminous.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Wren is a dumpus.', 'Dumpuses are luminous.', 'Wren is luminous.']",True,"['Wren is a yumpus.', 'Every yumpus is a jompus.', 'Wren is luminous.']",True,False,S0|S1-s2s|C|
+64,"Answer True or False to the following question. Answer as in the examples.
 
 Zumpuses are fruity. Every zumpus is a rompus. Each numpus is muffled. Numpuses are lempuses. Each lempus is fast. Each numpus is a tumpus. Tumpuses are jompuses. Tumpuses are bright. Jompuses are rainy. Tumpuses are brimpuses. Wren is a zumpus. Wren is a tumpus.
 Question: Is Wren bright?
@@ -9033,8 +9033,8 @@ Each tumpus is an impus. Sterpuses are shumpuses. Each sterpus is a vumpus. Vump
 Question: Is Polly dull?
 Think step-by-step.
 
-","['Polly is a sterpus.', 'Each sterpus is dull.', 'Polly is dull.']",True,"['Polly is a sterpus.', 'Each sterpus is dull.', 'Polly is dull.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Polly is a sterpus.', 'Each sterpus is dull.', 'Polly is dull.']",True,"['Polly is a sterpus.', 'Each sterpus is dull.', 'Polly is dull.']",True,True,C|C|C|
+65,"Answer True or False to the following question. Answer as in the examples.
 
 Tumpuses are jompuses. Jompuses are liquid. Gorpuses are hot. Every gorpus is a rompus. Each dumpus is blue. Tumpuses are gorpuses. Tumpuses are shy. Dumpuses are lorpuses. Rompuses are windy. Gorpuses are sterpuses. Alex is a dumpus. Alex is a gorpus.
 Question: Is Alex hot?
@@ -9172,8 +9172,8 @@ Each lempus is not orange. Numpuses are yumpuses. Grimpuses are tumpuses. Each w
 Question: Is Sam orange?
 Think step-by-step.
 
-","['Sam is a lempus.', 'Each lempus is orange.', 'Sam is orange.']",False,"['Sam is a wumpus.', 'Each wumpus is not dull.', 'Sam is not dull.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a lempus.', 'Each lempus is orange.', 'Sam is orange.']",False,"['Sam is a wumpus.', 'Each wumpus is not dull.', 'Sam is not dull.']",False,False,S0|S1-add_not|S2-add_not|
+66,"Answer True or False to the following question. Answer as in the examples.
 
 Zumpuses are windy. Each rompus is a jompus. Tumpuses are zumpuses. Every tumpus is a lempus. Rompuses are floral. Every tumpus is not aggressive. Polly is a tumpus. Polly is a rompus.
 Question: Is Polly aggressive?
@@ -9311,8 +9311,8 @@ Each lempus is a gorpus. Lempuses are moderate. Lempuses are grimpuses. Each zum
 Question: Is Alex moderate?
 Think step-by-step.
 
-","['Alex is a lempus.', 'Lempuses are not moderate.', 'Alex is not moderate.']",False,"['Alex is a zumpus.', 'Each zumpus is small.', 'Alex is small.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Alex is a lempus.', 'Lempuses are not moderate.', 'Alex is not moderate.']",False,"['Alex is a zumpus.', 'Each zumpus is small.', 'Alex is small.']",True,False,S0|S1-lose_not|S2-lose_not|
+67,"Answer True or False to the following question. Answer as in the examples.
 
 Each dumpus is a yumpus. Numpuses are tumpuses. Gorpuses are temperate. Each numpus is a vumpus. Numpuses are transparent. Zumpuses are not brown. Vumpuses are zumpuses. Dumpuses are numpuses. Grimpuses are lorpuses. Tumpuses are large. Each sterpus is a wumpus. Yumpuses are feisty. Every sterpus is overcast. Sterpuses are gorpuses. Each dumpus is sour. Each vumpus is luminous. Every grimpus is loud. Vumpuses are sterpuses. Wren is a vumpus. Wren is a grimpus.
 Question: Is Wren luminous?
@@ -9450,8 +9450,8 @@ Lempuses are not fruity. Tumpuses are numpuses. Every brimpus is not windy. Brim
 Question: Is Sally luminous?
 Think step-by-step.
 
-","['Sally is a numpus.', 'Numpuses are not luminous.', 'Sally is not luminous.']",False,"['Sally is a numpus.', 'Numpuses are not luminous.', 'Sally is not luminous.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a numpus.', 'Numpuses are not luminous.', 'Sally is not luminous.']",False,"['Sally is a numpus.', 'Numpuses are not luminous.', 'Sally is not luminous.']",True,True,C|C|C|
+68,"Answer True or False to the following question. Answer as in the examples.
 
 Every tumpus is a dumpus. Each tumpus is a vumpus. Numpuses are grimpuses. Every tumpus is mean. Every grimpus is transparent. Every dumpus is shy. Every lempus is a lorpus. Each lempus is windy. Each numpus is fruity. Each numpus is a tumpus. Alex is a tumpus. Alex is a lempus.
 Question: Is Alex mean?
@@ -9589,8 +9589,8 @@ Wumpuses are not happy. Wumpuses are gorpuses. Numpuses are zumpuses. Every gorp
 Question: Is Sally happy?
 Think step-by-step.
 
-","['Sally is a wumpus.', 'Wumpuses are happy.', 'Sally is happy.']",True,"['Sally is a wumpus.', 'Every wumpus is happy.', 'Sally is happy.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a wumpus.', 'Wumpuses are happy.', 'Sally is happy.']",True,"['Sally is a wumpus.', 'Every wumpus is happy.', 'Sally is happy.']",True,False,C|S1-miss_a|C|
+69,"Answer True or False to the following question. Answer as in the examples.
 
 Impuses are sterpuses. Numpuses are amenable. Vumpuses are dumpuses. Each impus is not muffled. Each vumpus is orange. Sterpuses are grimpuses. Sterpuses are dull. Each zumpus is happy. Sterpuses are brimpuses. Grimpuses are transparent. Grimpuses are tumpuses. Grimpuses are zumpuses. Brimpuses are floral. Impuses are numpuses. Stella is a vumpus. Stella is a grimpus.
 Question: Is Stella transparent?
@@ -9728,8 +9728,8 @@ Impuses are numpuses. Zumpuses are shumpuses. Every impus is opaque. Each zumpus
 Question: Is Rex shy?
 Think step-by-step.
 
-","['Rex is a zumpus.', 'Zumpuses are shy.', 'Rex is shy.']",False,"['Rex is an impus.', 'Impuses are numpuses.', 'Rex is numpus.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Rex is a zumpus.', 'Zumpuses are shy.', 'Rex is shy.']",False,"['Rex is an impus.', 'Impuses are numpuses.', 'Rex is numpus.']",False,False,S0|S1-miss_a|S2-s4a|
+70,"Answer True or False to the following question. Answer as in the examples.
 
 Each gorpus is a brimpus. Gorpuses are tumpuses. Sterpuses are rompuses. Tumpuses are dull. Vumpuses are temperate. Wumpuses are small. Sterpuses are liquid. Gorpuses are not loud. Brimpuses are vumpuses. Every wumpus is an impus. Every brimpus is a sterpus. Every shumpus is not feisty. Every brimpus is not kind. Each sterpus is a shumpus. Wren is a wumpus. Wren is a gorpus.
 Question: Is Wren loud?
@@ -9867,8 +9867,8 @@ Every tumpus is small. Gorpuses are tumpuses. Every impus is a sterpus. Each gor
 Question: Is Sam mean?
 Think step-by-step.
 
-","['Sam is a gorpus.', 'Every gorpus is mean.', 'Sam is mean.']",True,"['Sam is a gorpus.', 'Every gorpus is mean.', 'Sam is mean.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a gorpus.', 'Every gorpus is mean.', 'Sam is mean.']",True,"['Sam is a gorpus.', 'Every gorpus is mean.', 'Sam is mean.']",True,True,C|C|C|
+71,"Answer True or False to the following question. Answer as in the examples.
 
 Every jompus is not moderate. Wumpuses are gorpuses. Every grimpus is a yumpus. Each sterpus is not mean. Sterpuses are brimpuses. Brimpuses are shumpuses. Every grimpus is rainy. Brimpuses are metallic. Dumpuses are tumpuses. Each yumpus is not nervous. Jompuses are zumpuses. Each sterpus is an impus. Dumpuses are not muffled. Every zumpus is orange. Grimpuses are lempuses. Every jompus is a sterpus. Each wumpus is a jompus. Every impus is not floral. Brimpuses are grimpuses. Shumpuses are small. Wumpuses are spicy. Gorpuses are not dull. Fae is a dumpus. Fae is a grimpus.
 Question: Is Fae rainy?
@@ -10006,8 +10006,8 @@ Every yumpus is a tumpus. Each grimpus is nervous. Every yumpus is not snowy. Yu
 Question: Is Sally snowy?
 Think step-by-step.
 
-","['Sally is a yumpus.', 'Every yumpus is snowy.', 'Sally is snowy.']",True,"['Sally is a yumpus.', 'Every yumpus is snowy.', 'Sally is snowy.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a yumpus.', 'Every yumpus is snowy.', 'Sally is snowy.']",True,"['Sally is a yumpus.', 'Every yumpus is snowy.', 'Sally is snowy.']",True,True,C|C|C|
+72,"Answer True or False to the following question. Answer as in the examples.
 
 Zumpuses are not large. Wumpuses are slow. Gorpuses are zumpuses. Brimpuses are sterpuses. Each rompus is nervous. Every gorpus is metallic. Gorpuses are rompuses. Every grimpus is not fruity. Each lempus is a vumpus. Each sterpus is sunny. Numpuses are not aggressive. Numpuses are brimpuses. Each brimpus is a gorpus. Zumpuses are tumpuses. Brimpuses are transparent. Every numpus is a grimpus. Every zumpus is a wumpus. Every lempus is not dull. Alex is a lempus. Alex is a brimpus.
 Question: Is Alex transparent?
@@ -10145,8 +10145,8 @@ Shumpuses are vumpuses. Zumpuses are melodic. Every rompus is feisty. Every zump
 Question: Is Stella fast?
 Think step-by-step.
 
-","['Stella is a gorpus.', 'Each gorpus is not fast.', 'Stella is not fast.']",False,"['Stella is a gorpus.', 'Every gorpus is not fast.', 'Stella is not fast.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a gorpus.', 'Each gorpus is not fast.', 'Stella is not fast.']",False,"['Stella is a gorpus.', 'Every gorpus is not fast.', 'Stella is not fast.']",True,False,C|S1-miss_a|C|
+73,"Answer True or False to the following question. Answer as in the examples.
 
 Rompuses are brimpuses. Rompuses are not cold. Wumpuses are lempuses. Zumpuses are sour. Every rompus is a zumpus. Every wumpus is large. Rex is a wumpus. Rex is a rompus.
 Question: Is Rex cold?
@@ -10284,8 +10284,8 @@ Impuses are wumpuses. Rompuses are vumpuses. Rompuses are dumpuses. Gorpuses are
 Question: Is Max liquid?
 Think step-by-step.
 
-","['Max is a rompus.', 'Each rompus is liquid.', 'Max is liquid.']",True,"['Max is an impus.', 'Impuses are wumpuses.', 'Max is wumpus.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a rompus.', 'Each rompus is liquid.', 'Max is liquid.']",True,"['Max is an impus.', 'Impuses are wumpuses.', 'Max is wumpus.']",True,False,S0|S1-miss_a|S2-s4a|
+74,"Answer True or False to the following question. Answer as in the examples.
 
 Wumpuses are happy. Every impus is a wumpus. Each impus is a numpus. Vumpuses are melodic. Every impus is not fruity. Vumpuses are zumpuses. Stella is an impus. Stella is a vumpus.
 Question: Is Stella fruity?
@@ -10423,8 +10423,8 @@ Sterpuses are not large. Dumpuses are tumpuses. Every grimpus is earthy. Every r
 Question: Is Alex temperate?
 Think step-by-step.
 
-","['Alex is a dumpus.', 'Dumpuses are not temperate.', 'Alex is not temperate.']",True,"['Alex is a rompus.', 'Every rompus is temperate.', 'Alex is temperate.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Alex is a dumpus.', 'Dumpuses are not temperate.', 'Alex is not temperate.']",True,"['Alex is a rompus.', 'Every rompus is temperate.', 'Alex is temperate.']",False,False,S0|S1-lose_not|S2-lose_not|
+75,"Answer True or False to the following question. Answer as in the examples.
 
 Each numpus is dull. Every brimpus is metallic. Lempuses are aggressive. Grimpuses are vumpuses. Sterpuses are gorpuses. Every grimpus is loud. Each yumpus is not moderate. Each sterpus is temperate. Gorpuses are numpuses. Gorpuses are not brown. Each lempus is a yumpus. Gorpuses are lempuses. Lempuses are jompuses. Sterpuses are brimpuses. Sally is a gorpus. Sally is a grimpus.
 Question: Is Sally brown?
@@ -10562,8 +10562,8 @@ Gorpuses are windy. Each sterpus is a rompus. Sterpuses are spicy. Each sterpus 
 Question: Is Polly spicy?
 Think step-by-step.
 
-","['Polly is a sterpus.', 'Sterpuses are not spicy.', 'Polly is not spicy.']",False,"['Polly is a gorpus.', 'Each gorpus is spicy.', 'Polly is spicy.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Polly is a sterpus.', 'Sterpuses are not spicy.', 'Polly is not spicy.']",False,"['Polly is a gorpus.', 'Each gorpus is spicy.', 'Polly is spicy.']",True,False,S0|S1-lose_not|S2-lose_not|
+76,"Answer True or False to the following question. Answer as in the examples.
 
 Each sterpus is snowy. Lempuses are grimpuses. Every lorpus is loud. Each lempus is dull. Each sterpus is a vumpus. Every sterpus is a lorpus. Alex is a sterpus. Alex is a lempus.
 Question: Is Alex snowy?
@@ -10701,8 +10701,8 @@ Brimpuses are not bright. Dumpuses are gorpuses. Each vumpus is a lorpus. Each g
 Question: Is Sally metallic?
 Think step-by-step.
 
-","['Sally is a zumpus.', 'Every zumpus is metallic.', 'Sally is metallic.']",True,"['Sally is a vumpus.', 'Every vumpus is metallic.', 'Sally is metallic.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a zumpus.', 'Every zumpus is metallic.', 'Sally is metallic.']",True,"['Sally is a vumpus.', 'Every vumpus is metallic.', 'Sally is metallic.']",True,False,S0|S1-miss_a|C|
+77,"Answer True or False to the following question. Answer as in the examples.
 
 Every impus is a jompus. Impuses are orange. Gorpuses are zumpuses. Tumpuses are muffled. Yumpuses are wumpuses. Every lempus is a lorpus. Jompuses are not hot. Every gorpus is not moderate. Yumpuses are wooden. Gorpuses are brimpuses. Impuses are gorpuses. Zumpuses are bitter. Dumpuses are transparent. Every lempus is a tumpus. Each lorpus is an impus. Each lorpus is a dumpus. Lorpuses are bright. Each lempus is not angry. Rex is a lempus. Rex is a yumpus.
 Question: Is Rex angry?
@@ -10840,8 +10840,8 @@ Each brimpus is a shumpus. Brimpuses are tumpuses. Jompuses are cold. Impuses ar
 Question: Is Stella opaque?
 Think step-by-step.
 
-","['Stella is a brimpus.', 'Brimpuses are opaque.', 'Stella is opaque.']",True,"['Stella is a brimpus.', 'Brimpuses are opaque.', 'Stella is opaque.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a brimpus.', 'Brimpuses are opaque.', 'Stella is opaque.']",True,"['Stella is a brimpus.', 'Brimpuses are opaque.', 'Stella is opaque.']",True,True,C|C|C|
+78,"Answer True or False to the following question. Answer as in the examples.
 
 Each lempus is windy. Every lorpus is a jompus. Each numpus is a gorpus. Lorpuses are large. Jompuses are not metallic. Every lorpus is a grimpus. Every gorpus is a lorpus. Gorpuses are yumpuses. Dumpuses are wumpuses. Dumpuses are not hot. Numpuses are lempuses. Each gorpus is slow. Yumpuses are not earthy. Every numpus is shy. Sally is a gorpus. Sally is a dumpus.
 Question: Is Sally slow?
@@ -10979,8 +10979,8 @@ Gorpuses are numpuses. Lempuses are brimpuses. Brimpuses are amenable. Gorpuses 
 Question: Is Alex shy?
 Think step-by-step.
 
-","['Alex is a lempus.', 'Lempuses are not shy.', 'Alex is not shy.']",True,"['Alex is a lempus.', 'Lempuses are shy.', 'Alex is shy.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Alex is a lempus.', 'Lempuses are not shy.', 'Alex is not shy.']",True,"['Alex is a lempus.', 'Lempuses are shy.', 'Alex is shy.']",False,False,C|S1-lose_not|S2-lose_not|
+79,"Answer True or False to the following question. Answer as in the examples.
 
 Tumpuses are dumpuses. Each numpus is a shumpus. Every numpus is not sunny. Tumpuses are sour. Every zumpus is not moderate. Tumpuses are zumpuses. Alex is a numpus. Alex is a tumpus.
 Question: Is Alex sour?
@@ -11118,8 +11118,8 @@ Each grimpus is sweet. Every brimpus is a gorpus. Sterpuses are not shy. Sterpus
 Question: Is Alex overcast?
 Think step-by-step.
 
-","['Alex is a wumpus.', 'Wumpuses are not overcast.', 'Alex is not overcast.']",False,"['Alex is a wumpus.', 'Every wumpus is not overcast.', 'Alex is not overcast.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Alex is a wumpus.', 'Wumpuses are not overcast.', 'Alex is not overcast.']",False,"['Alex is a wumpus.', 'Every wumpus is not overcast.', 'Alex is not overcast.']",True,False,C|S1-miss_a|C|
+80,"Answer True or False to the following question. Answer as in the examples.
 
 Lorpuses are not opaque. Jompuses are impuses. Each lempus is a lorpus. Every wumpus is a jompus. Zumpuses are loud. Zumpuses are numpuses. Each jompus is a rompus. Each yumpus is earthy. Every jompus is feisty. Each wumpus is not sunny. Rompuses are fast. Wumpuses are yumpuses. Lempuses are wooden. Every lempus is a wumpus. Rex is a wumpus. Rex is a zumpus.
 Question: Is Rex sunny?
@@ -11257,8 +11257,8 @@ Yumpuses are metallic. Wumpuses are not discordant. Every tumpus is blue. Each z
 Question: Is Sally sour?
 Think step-by-step.
 
-","['Sally is a jompus.', 'Jompuses are sour.', 'Sally is sour.']",False,"['Sally is a dumpus.', 'Every dumpus is not bright.', 'Sally is not bright.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a jompus.', 'Jompuses are sour.', 'Sally is sour.']",False,"['Sally is a dumpus.', 'Every dumpus is not bright.', 'Sally is not bright.']",False,False,S0|S1-add_not|S2-add_not|
+81,"Answer True or False to the following question. Answer as in the examples.
 
 Lempuses are floral. Shumpuses are not fast. Every shumpus is a zumpus. Each dumpus is a jompus. Every grimpus is a lempus. Each dumpus is sunny. Yumpuses are rompuses. Every jompus is not mean. Every numpus is not wooden. Grimpuses are not orange. Yumpuses are large. Wumpuses are bright. Every grimpus is a dumpus. Lorpuses are brimpuses. Each vumpus is a numpus. Vumpuses are not temperate. Every vumpus is a grimpus. Each dumpus is a shumpus. Shumpuses are wumpuses. Yumpuses are vumpuses. Lorpuses are sour. Rompuses are loud. Sam is a lorpus. Sam is a dumpus.
 Question: Is Sam sunny?
@@ -11396,8 +11396,8 @@ Jompuses are numpuses. Every sterpus is a vumpus. Numpuses are not discordant. Y
 Question: Is Max sweet?
 Think step-by-step.
 
-","['Max is a grimpus.', 'Every grimpus is sweet.', 'Max is sweet.']",False,"['Max is a grimpus.', 'Every grimpus is sweet.', 'Max is not sweet.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a grimpus.', 'Every grimpus is sweet.', 'Max is sweet.']",False,"['Max is a grimpus.', 'Every grimpus is sweet.', 'Max is not sweet.']",False,False,C|C|S2-add_not|
+82,"Answer True or False to the following question. Answer as in the examples.
 
 Every rompus is not red. Every lempus is a yumpus. Yumpuses are sterpuses. Every shumpus is spicy. Every rompus is a lempus. Yumpuses are tumpuses. Yumpuses are not snowy. Each rompus is a shumpus. Lempuses are dumpuses. Each zumpus is not cold. Every sterpus is not metallic. Dumpuses are happy. Each lempus is fruity. Every zumpus is a numpus. Rex is a lempus. Rex is a zumpus.
 Question: Is Rex fruity?
@@ -11535,8 +11535,8 @@ Tumpuses are earthy. Jompuses are grimpuses. Vumpuses are not opaque. Brimpuses 
 Question: Is Max wooden?
 Think step-by-step.
 
-","['Max is a brimpus.', 'Every brimpus is not wooden.', 'Max is not wooden.']",False,"['Max is a brimpus.', 'Every brimpus is not wooden.', 'Max is not wooden.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a brimpus.', 'Every brimpus is not wooden.', 'Max is not wooden.']",False,"['Max is a brimpus.', 'Every brimpus is not wooden.', 'Max is not wooden.']",True,True,C|C|C|
+83,"Answer True or False to the following question. Answer as in the examples.
 
 Lempuses are not fruity. Every gorpus is feisty. Sterpuses are lempuses. Every sterpus is a rompus. Each gorpus is a numpus. Sterpuses are not fast. Alex is a gorpus. Alex is a sterpus.
 Question: Is Alex fast?
@@ -11674,8 +11674,8 @@ Each brimpus is a dumpus. Gorpuses are not overcast. Gorpuses are yumpuses. Ever
 Question: Is Stella overcast?
 Think step-by-step.
 
-","['Stella is a gorpus.', 'Gorpuses are overcast.', 'Stella is overcast.']",False,"['Stella is a brimpus.', 'Each brimpus is not overcast.', 'Stella is not overcast.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a gorpus.', 'Gorpuses are overcast.', 'Stella is overcast.']",False,"['Stella is a brimpus.', 'Each brimpus is not overcast.', 'Stella is not overcast.']",False,False,S0|S1-add_not|S2-add_not|
+84,"Answer True or False to the following question. Answer as in the examples.
 
 Every zumpus is not loud. Every gorpus is rainy. Jompuses are grimpuses. Jompuses are not small. Each tumpus is an impus. Each shumpus is a lorpus. Each tumpus is a gorpus. Each tumpus is bitter. Each numpus is liquid. Impuses are zumpuses. Each jompus is a numpus. Shumpuses are slow. Each impus is a jompus. Every impus is dull. Stella is a shumpus. Stella is a jompus.
 Question: Is Stella small?
@@ -11813,8 +11813,8 @@ Yumpuses are jompuses. Brimpuses are feisty. Each yumpus is fast. Every wumpus i
 Question: Is Fae sweet?
 Think step-by-step.
 
-","['Fae is a wumpus.', 'Wumpuses are sweet.', 'Fae is sweet.']",False,"['Fae is a brimpus.', 'Every brimpus is feisty.', 'Fae is not feisty.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Fae is a wumpus.', 'Wumpuses are sweet.', 'Fae is sweet.']",False,"['Fae is a brimpus.', 'Every brimpus is feisty.', 'Fae is not feisty.']",False,False,S0|S1-s2s|S2-add_not|
+85,"Answer True or False to the following question. Answer as in the examples.
 
 Zumpuses are gorpuses. Each zumpus is not nervous. Lempuses are impuses. Dumpuses are yumpuses. Vumpuses are jompuses. Lempuses are moderate. Each sterpus is floral. Every shumpus is discordant. Zumpuses are tumpuses. Each numpus is snowy. Yumpuses are cold. Rompuses are sterpuses. Yumpuses are zumpuses. Each gorpus is not bright. Vumpuses are luminous. Each rompus is not blue. Vumpuses are dumpuses. Jompuses are opaque. Dumpuses are numpuses. Each rompus is a vumpus. Dumpuses are spicy. Yumpuses are shumpuses. Polly is a lempus. Polly is a zumpus.
 Question: Is Polly nervous?
@@ -11952,8 +11952,8 @@ Brimpuses are earthy. Impuses are not small. Every brimpus is a numpus. Each bri
 Question: Is Rex happy?
 Think step-by-step.
 
-","['Rex is a shumpus.', 'Every shumpus is happy.', 'Rex is happy.']",True,"['Rex is an impus.', 'Impuses are happy.', 'Rex is happy.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Rex is a shumpus.', 'Every shumpus is happy.', 'Rex is happy.']",True,"['Rex is an impus.', 'Impuses are happy.', 'Rex is happy.']",True,False,S0|S1-miss_a|C|
+86,"Answer True or False to the following question. Answer as in the examples.
 
 Brimpuses are brown. Yumpuses are shumpuses. Grimpuses are wumpuses. Yumpuses are hot. Lempuses are brimpuses. Each shumpus is not aggressive. Every dumpus is a yumpus. Tumpuses are zumpuses. Lempuses are grimpuses. Each dumpus is a gorpus. Grimpuses are dumpuses. Every lempus is muffled. Rompuses are impuses. Dumpuses are not bright. Every tumpus is a lempus. Each yumpus is a sterpus. Every tumpus is slow. Every zumpus is nervous. Grimpuses are not sunny. Rompuses are not earthy. Each gorpus is transparent. Every wumpus is large. Rex is a grimpus. Rex is a rompus.
 Question: Is Rex sunny?
@@ -12091,8 +12091,8 @@ Sterpuses are brimpuses. Each brimpus is a yumpus. Vumpuses are not liquid. Ster
 Question: Is Wren sour?
 Think step-by-step.
 
-","['Wren is a brimpus.', 'Every brimpus is sour.', 'Wren is sour.']",True,"['Wren is a brimpus.', 'Every brimpus is sour.', 'Wren is sour.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Wren is a brimpus.', 'Every brimpus is sour.', 'Wren is sour.']",True,"['Wren is a brimpus.', 'Every brimpus is sour.', 'Wren is sour.']",True,True,C|C|C|
+87,"Answer True or False to the following question. Answer as in the examples.
 
 Each impus is bright. Each lorpus is a dumpus. Every lorpus is not cold. Numpuses are impuses. Every numpus is a brimpus. Numpuses are brown. Stella is a lorpus. Stella is a numpus.
 Question: Is Stella brown?
@@ -12230,8 +12230,8 @@ Every shumpus is a gorpus. Each grimpus is a sterpus. Grimpuses are zumpuses. Ea
 Question: Is Max shy?
 Think step-by-step.
 
-","['Max is a grimpus.', 'Grimpuses are not shy.', 'Max is not shy.']",False,"['Max is a grimpus.', 'Each grimpus is a sterpus.', 'Max is a sterpus.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Max is a grimpus.', 'Grimpuses are not shy.', 'Max is not shy.']",False,"['Max is a grimpus.', 'Each grimpus is a sterpus.', 'Max is a sterpus.']",True,False,C|S1-lose_not|S2-lose_not|
+88,"Answer True or False to the following question. Answer as in the examples.
 
 Every dumpus is snowy. Every tumpus is not dull. Dumpuses are tumpuses. Every yumpus is a numpus. Yumpuses are not fruity. Every dumpus is a lorpus. Max is a dumpus. Max is a yumpus.
 Question: Is Max snowy?
@@ -12369,8 +12369,8 @@ Every zumpus is sweet. Impuses are not temperate. Yumpuses are impuses. Wumpuses
 Question: Is Fae fast?
 Think step-by-step.
 
-","['Fae is a yumpus.', 'Yumpuses are not fast.', 'Fae is not fast.']",True,"['Fae is a zumpus.', 'Every zumpus is fast.', 'Fae is fast.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Fae is a yumpus.', 'Yumpuses are not fast.', 'Fae is not fast.']",True,"['Fae is a zumpus.', 'Every zumpus is fast.', 'Fae is fast.']",False,False,S0|S1-lose_not|S2-lose_not|
+89,"Answer True or False to the following question. Answer as in the examples.
 
 Sterpuses are feisty. Grimpuses are cold. Shumpuses are grimpuses. Each jompus is a shumpus. Jompuses are opaque. Each sterpus is an impus. Every jompus is a yumpus. Each shumpus is bright. Each yumpus is bitter. Shumpuses are lempuses. Alex is a sterpus. Alex is a shumpus.
 Question: Is Alex bright?
@@ -12508,8 +12508,8 @@ Each brimpus is a gorpus. Every gorpus is spicy. Each grimpus is earthy. Impuses
 Question: Is Fae moderate?
 Think step-by-step.
 
-","['Fae is an impus.', 'Impuses are moderate.', 'Fae is moderate.']",False,"['Fae is a shumpus.', 'Shumpuses are overcast.', 'Fae is overcast.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Fae is an impus.', 'Impuses are moderate.', 'Fae is moderate.']",False,"['Fae is a shumpus.', 'Shumpuses are overcast.', 'Fae is overcast.']",False,False,S0|S1-miss_a|S2-miss_a|
+90,"Answer True or False to the following question. Answer as in the examples.
 
 Numpuses are lorpuses. Every vumpus is a tumpus. Each vumpus is a grimpus. Numpuses are bright. Every grimpus is angry. Vumpuses are not melodic. Every tumpus is spicy. Each tumpus is an impus. Each impus is transparent. Each tumpus is a shumpus. Fae is a numpus. Fae is a tumpus.
 Question: Is Fae spicy?
@@ -12647,8 +12647,8 @@ Each gorpus is a sterpus. Every rompus is orange. Each gorpus is spicy. Every lo
 Question: Is Sam overcast?
 Think step-by-step.
 
-","['Sam is a sterpus.', 'Sterpuses are not overcast.', 'Sam is not overcast.']",False,"['Sam is a sterpus.', 'Sterpuses are not overcast.', 'Sam is not overcast.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a sterpus.', 'Sterpuses are not overcast.', 'Sam is not overcast.']",False,"['Sam is a sterpus.', 'Sterpuses are not overcast.', 'Sam is not overcast.']",True,True,C|C|C|
+91,"Answer True or False to the following question. Answer as in the examples.
 
 Jompuses are vumpuses. Dumpuses are yumpuses. Every yumpus is a jompus. Every vumpus is a gorpus. Jompuses are not floral. Dumpuses are not metallic. Each vumpus is a tumpus. Numpuses are not small. Rompuses are overcast. Dumpuses are lorpuses. Each yumpus is a sterpus. Each tumpus is a numpus. Each lorpus is not sweet. Gorpuses are discordant. Every vumpus is not kind. Each grimpus is hot. Every tumpus is not fast. Every sterpus is not bright. Grimpuses are zumpuses. Yumpuses are not transparent. Each jompus is a rompus. Tumpuses are impuses. Max is a dumpus. Max is a grimpus.
 Question: Is Max metallic?
@@ -12786,8 +12786,8 @@ Grimpuses are numpuses. Sterpuses are not happy. Every rompus is a sterpus. Ever
 Question: Is Polly floral?
 Think step-by-step.
 
-","['Polly is a numpus.', 'Numpuses are floral.', 'Polly is floral.']",True,"['Polly is a numpus.', 'Every numpus is a shumpus.', 'Polly is a shumpus.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Polly is a numpus.', 'Numpuses are floral.', 'Polly is floral.']",True,"['Polly is a numpus.', 'Every numpus is a shumpus.', 'Polly is a shumpus.']",True,False,C|S1-s2s|S2-s4a|
+92,"Answer True or False to the following question. Answer as in the examples.
 
 Vumpuses are impuses. Every vumpus is sunny. Each shumpus is liquid. Shumpuses are brimpuses. Every zumpus is not shy. Each vumpus is a zumpus. Stella is a shumpus. Stella is a vumpus.
 Question: Is Stella sunny?
@@ -12925,8 +12925,8 @@ Every yumpus is not mean. Shumpuses are rompuses. Shumpuses are lempuses. Lempus
 Question: Is Wren shy?
 Think step-by-step.
 
-","['Wren is a shumpus.', 'Shumpuses are shy.', 'Wren is shy.']",True,"['Wren is a shumpus.', 'Shumpuses are shy.', 'Wren is shy.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Wren is a shumpus.', 'Shumpuses are shy.', 'Wren is shy.']",True,"['Wren is a shumpus.', 'Shumpuses are shy.', 'Wren is shy.']",True,True,C|C|C|
+93,"Answer True or False to the following question. Answer as in the examples.
 
 Lorpuses are wumpuses. Each zumpus is not brown. Every vumpus is a jompus. Rompuses are zumpuses. Lorpuses are sterpuses. Every wumpus is luminous. Every rompus is a lorpus. Every lorpus is not cold. Each vumpus is not floral. Rompuses are not small. Stella is a vumpus. Stella is a lorpus.
 Question: Is Stella cold?
@@ -13064,8 +13064,8 @@ Shumpuses are vumpuses. Yumpuses are bitter. Every lempus is fast. Shumpuses are
 Question: Is Sam orange?
 Think step-by-step.
 
-","['Sam is a shumpus.', 'Shumpuses are orange.', 'Sam is orange.']",True,"['Sam is a shumpus.', 'Each shumpus is orange.', 'Sam is orange.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Sam is a shumpus.', 'Shumpuses are orange.', 'Sam is orange.']",True,"['Sam is a shumpus.', 'Each shumpus is orange.', 'Sam is orange.']",True,False,C|S1-miss_a|C|
+94,"Answer True or False to the following question. Answer as in the examples.
 
 Each jompus is a shumpus. Every jompus is bright. Wumpuses are sterpuses. Every tumpus is transparent. Every wumpus is fruity. Every wumpus is a tumpus. Max is a jompus. Max is a wumpus.
 Question: Is Max fruity?
@@ -13203,8 +13203,8 @@ Every zumpus is small. Brimpuses are not kind. Each zumpus is a numpus. Tumpuses
 Question: Is Fae happy?
 Think step-by-step.
 
-","['Fae is a vumpus.', 'Vumpuses are not happy.', 'Fae is not happy.']",True,"['Fae is a vumpus.', 'Every vumpus is happy.', 'Fae is happy.']",False,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Fae is a vumpus.', 'Vumpuses are not happy.', 'Fae is not happy.']",True,"['Fae is a vumpus.', 'Every vumpus is happy.', 'Fae is happy.']",False,False,C|S1-lose_not|S2-lose_not|
+95,"Answer True or False to the following question. Answer as in the examples.
 
 Every tumpus is bright. Every wumpus is a tumpus. Each grimpus is not sweet. Grimpuses are lempuses. Each wumpus is luminous. Shumpuses are moderate. Grimpuses are wumpuses. Each shumpus is a numpus. Lempuses are earthy. Each wumpus is a brimpus. Max is a shumpus. Max is a wumpus.
 Question: Is Max luminous?
@@ -13342,8 +13342,8 @@ Zumpuses are blue. Each dumpus is not mean. Vumpuses are tumpuses. Every zumpus 
 Question: Is Sally blue?
 Think step-by-step.
 
-","['Sally is a zumpus.', 'Zumpuses are not blue.', 'Sally is not blue.']",False,"['Sally is a zumpus.', 'Zumpuses are not blue.', 'Sally is not blue.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a zumpus.', 'Zumpuses are not blue.', 'Sally is not blue.']",False,"['Sally is a zumpus.', 'Zumpuses are not blue.', 'Sally is not blue.']",True,True,C|C|C|
+96,"Answer True or False to the following question. Answer as in the examples.
 
 Brimpuses are shy. Numpuses are hot. Brimpuses are gorpuses. Each sterpus is a lorpus. Each sterpus is transparent. Every sterpus is a numpus. Sam is a brimpus. Sam is a sterpus.
 Question: Is Sam transparent?
@@ -13481,8 +13481,8 @@ Every lempus is a grimpus. Tumpuses are dull. Each grimpus is slow. Tumpuses are
 Question: Is Stella bitter?
 Think step-by-step.
 
-","['Stella is a lempus.', 'Each lempus is bitter.', 'Stella is bitter.']",True,"['Stella is a lempus.', 'Every lempus is bitter.', 'Stella is bitter.']",True,False
-"Answer True or False to the following question. Answer as in the examples.
+","['Stella is a lempus.', 'Each lempus is bitter.', 'Stella is bitter.']",True,"['Stella is a lempus.', 'Every lempus is bitter.', 'Stella is bitter.']",True,False,C|S1-miss_a|C|
+97,"Answer True or False to the following question. Answer as in the examples.
 
 Every vumpus is a grimpus. Brimpuses are sterpuses. Vumpuses are orange. Gorpuses are not bright. Vumpuses are gorpuses. Brimpuses are happy. Alex is a vumpus. Alex is a brimpus.
 Question: Is Alex orange?
@@ -13620,8 +13620,8 @@ Every wumpus is a lempus. Every lorpus is red. Sterpuses are not liquid. Brimpus
 Question: Is Sally opaque?
 Think step-by-step.
 
-","['Sally is a wumpus.', 'Each wumpus is opaque.', 'Sally is opaque.']",True,"['Sally is a wumpus.', 'Each wumpus is opaque.', 'Sally is opaque.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Sally is a wumpus.', 'Each wumpus is opaque.', 'Sally is opaque.']",True,"['Sally is a wumpus.', 'Each wumpus is opaque.', 'Sally is opaque.']",True,True,C|C|C|
+98,"Answer True or False to the following question. Answer as in the examples.
 
 Each lorpus is a zumpus. Jompuses are yumpuses. Lorpuses are not wooden. Brimpuses are not fruity. Jompuses are not loud. Lorpuses are brimpuses. Sally is a jompus. Sally is a lorpus.
 Question: Is Sally wooden?
@@ -13759,8 +13759,8 @@ Sterpuses are discordant. Vumpuses are nervous. Each dumpus is a shumpus. Sterpu
 Question: Is Alex luminous?
 Think step-by-step.
 
-","['Alex is a wumpus.', 'Wumpuses are luminous.', 'Alex is luminous.']",True,"['Alex is a wumpus.', 'Wumpuses are luminous.', 'Alex is luminous.']",True,True
-"Answer True or False to the following question. Answer as in the examples.
+","['Alex is a wumpus.', 'Wumpuses are luminous.', 'Alex is luminous.']",True,"['Alex is a wumpus.', 'Wumpuses are luminous.', 'Alex is luminous.']",True,True,C|C|C|
+99,"Answer True or False to the following question. Answer as in the examples.
 
 Every tumpus is bright. Each yumpus is slow. Each gorpus is a yumpus. Each gorpus is blue. Gorpuses are zumpuses. Tumpuses are rompuses. Sam is a tumpus. Sam is a gorpus.
 Question: Is Sam blue?
@@ -13898,4 +13898,4 @@ Every zumpus is a rompus. Every numpus is a sterpus. Jompuses are zumpuses. Each
 Question: Is Wren luminous?
 Think step-by-step.
 
-","['Wren is a numpus.', 'Every numpus is luminous.', 'Wren is luminous.']",True,"['Wren is a numpus.', 'Every numpus is luminous.', 'Wren is luminous.']",True,True
+","['Wren is a numpus.', 'Every numpus is luminous.', 'Wren is luminous.']",True,"['Wren is a numpus.', 'Every numpus is luminous.', 'Wren is luminous.']",True,True,C|C|C|
