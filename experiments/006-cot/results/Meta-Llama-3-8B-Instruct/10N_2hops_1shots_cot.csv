@@ -1,0 +1,280 @@
+prompt,answer,label,cot_gold,pred,cot_pred,correct_pred,correct_cot
+"Answer to the following question as shown in the following examples.
+Vumpuses are lorpuses. Each vumpus is not happy. Sterpuses are not hungry. Each vumpus is hungry. Each sterpus is not heavy. Dumpuses are sterpuses. Each dumpus is not happy. Trux is a lorpus. Trux is a dumpus.
+
+Question: Is Trux hungry?
+Think step by step.
+
+(1) Trux is a dumpus.
+(2) Dumpuses are sterpuses.
+(3) Trux is a sterpus.
+(4) Sterpuses are not hungry.
+(5) Trux is not hungry.
+Answer: No
+
+
+Each gorpus is not large. Gorpuses are crazy. Each jompus is not tall. Jompuses are large. Each gorpus is a dumpus. Rompuses are crazy. Each rompus is a jompus. Jinx is a dumpus. Jinx is a rompus.
+
+Question: Is Jinx large?
+Think step by step.
+","Here's the step-by-step answer:
+
+(1) Jinx is a rompus.
+(2) Rompuses are a jompus.
+(3) Jinx is a jompus.
+(4) Jompuses are large.
+(5) Jinx is large.
+
+Answer: Yes",Yes,"['Jinx is a rompus.', 'Each rompus is a jompus.', 'Jinx is a jompus.', 'Each jompus is large.', 'Jinx is large.']",Yes,"['Jinx is a rompus.', 'Rompuses are a jompus.', 'Jinx is a jompus.', 'Jompuses are large.', 'Jinx is large.']",True,True
+"Answer to the following question as shown in the following examples.
+Each lempus is not crazy. Numpuses are hungry. Sterpuses are crazy. Sterpuses are blonde. Each numpus is a sterpus. Lempuses are zumpuses. Lempuses are hungry. Jinx is a numpus. Jinx is a zumpus.
+
+Question: Is Jinx crazy?
+Think step by step.
+
+(1) Jinx is a numpus.
+(2) Each numpus is a sterpus.
+(3) Jinx is a sterpus.
+(4) Sterpuses are crazy.
+(5) Jinx is crazy.
+Answer: Yes
+
+
+Sterpuses are numpuses. Wumpuses are hungry. Wumpuses are rompuses. Wumpuses are tall. Numpuses are not crazy. Each numpus is not hungry. Each sterpus is tall. Grom is a sterpus. Grom is a rompus.
+
+Question: Is Grom hungry?
+Think step by step.
+","Let's break it down step by step:
+
+(1) Grom is a rompus.
+(2) Wumpuses are rompuses.
+(3) Grom is a wumpus.
+(4) Wumpuses are hungry.
+(5) Grom is hungry.
+
+Answer: Yes",No,"['Grom is a sterpus.', 'Sterpuses are numpuses.', 'Grom is a numpus.', 'Each numpus is not hungry.', 'Grom is not hungry.']",Yes,"['Grom is a rompus.', 'Wumpuses are rompuses.', 'Grom is a wumpus.', 'Wumpuses are hungry.', 'Grom is hungry.']",False,False
+"Answer to the following question as shown in the following examples.
+Brimpuses are tall. Brimpuses are gorpuses. Each grimpus is hungry. Wumpuses are grimpuses. Each brimpus is not hungry. Each grimpus is not luminous. Each wumpus is tall. Rast is a gorpus. Rast is a wumpus.
+
+Question: Is Rast hungry?
+Think step by step.
+
+(1) Rast is a wumpus.
+(2) Wumpuses are grimpuses.
+(3) Rast is a grimpus.
+(4) Grimpuses are hungry.
+(5) Rast is hungry.
+Answer: Yes
+
+
+Lempuses are not hungry. Each impus is not hungry. Impuses are blonde. Each impus is a yumpus. Each lorpus is crazy. Lorpuses are not blonde. Lempuses are lorpuses. Trux is a yumpus. Trux is a lempus.
+
+Question: Is Trux blonde?
+Think step by step.
+","Let's break it down step by step:
+
+(1) Trux is a yumpus.
+(2) Each impus is a yumpus.
+(3) Trux is an impus.
+(4) Impuses are blonde.
+(5) Trux is blonde.
+
+Answer: Yes",No,"['Trux is a lempus.', 'Lempuses are lorpuses.', 'Trux is a lorpus.', 'Lorpuses are not blonde.', 'Trux is not blonde.']",Yes,"['Trux is a yumpus.', 'Each impus is a yumpus.', 'Trux is an impus.', 'Impuses are blonde.', 'Trux is blonde.']",False,False
+"Answer to the following question as shown in the following examples.
+Jompuses are luminous. Each zumpus is crazy. Jompuses are tall. Each zumpus is a tumpus. Zumpuses are not tall. Sterpuses are crazy. Each sterpus is a jompus. Rast is a sterpus. Rast is a tumpus.
+
+Question: Is Rast tall?
+Think step by step.
+
+(1) Rast is a sterpus.
+(2) Each sterpus is a jompus.
+(3) Rast is a jompus.
+(4) Each jompus is tall.
+(5) Rast is tall.
+Answer: Yes
+
+
+Yumpuses are heavy. Each yumpus is not fast. Impuses are not heavy. Jompuses are yumpuses. Each impus is a grimpus. Impuses are not crazy. Jompuses are not crazy. Grom is a grimpus. Grom is a jompus.
+
+Question: Is Grom heavy?
+Think step by step.
+","Let's break it down step by step:
+
+(1) Jompuses are yumpuses.
+(2) Grom is a jompus.
+(3) Therefore, Grom is a yumpus.
+
+(4) Yumpuses are heavy.
+(5) Therefore, Grom is heavy.
+
+Answer: Yes",Yes,"['Grom is a jompus.', 'Each jompus is a yumpus.', 'Grom is a yumpus.', 'Yumpuses are heavy.', 'Grom is heavy.']",Yes,"['Jompuses are yumpuses.', 'Grom is a jompus.', 'Therefore, Grom is a yumpus.', 'Yumpuses are heavy.', 'Therefore, Grom is heavy.']",True,True
+"Answer to the following question as shown in the following examples.
+Brimpuses are lempuses. Lempuses are not blonde. Impuses are crazy. Lempuses are happy. Each brimpus is crazy. Each impus is not happy. Impuses are grimpuses. Grom is a grimpus. Grom is a brimpus.
+
+Question: Is Grom happy?
+Think step by step.
+
+(1) Grom is a brimpus.
+(2) Brimpuses are lempuses.
+(3) Grom is a lempus.
+(4) Each lempus is happy.
+(5) Grom is happy.
+Answer: Yes
+
+
+Impuses are crazy. Vumpuses are hungry. Lempuses are hungry. Each vumpus is a rompus. Each impus is happy. Vumpuses are not crazy. Lempuses are impuses. Grom is a rompus. Grom is a lempus.
+
+Question: Is Grom crazy?
+Think step by step.
+","Let's break it down step by step:
+
+(1) Grom is a rompus.
+(2) Each vumpus is a rompus.
+(3) Grom is a vumpus (by transitive property: if A is B and B is C, then A is C).
+(4) Vumpuses are not crazy.
+(5) Grom is not crazy.
+
+Answer: No",Yes,"['Grom is a lempus.', 'Lempuses are impuses.', 'Grom is a impus.', 'Each impus is crazy.', 'Grom is crazy.']",No,"['Grom is a rompus.', 'Each vumpus is a rompus.', 'Grom is a vumpus (by transitive property: if A is B and B is C, then A is C).', 'Vumpuses are not crazy.', 'Grom is not crazy.']",False,False
+"Answer to the following question as shown in the following examples.
+Each zumpus is heavy. Numpuses are heavy. Numpuses are tall. Numpuses are rompuses. Each dumpus is not tall. Dumpuses are luminous. Each zumpus is a dumpus. Trux is a zumpus. Trux is a rompus.
+
+Question: Is Trux tall?
+Think step by step.
+
+(1) Trux is a zumpus.
+(2) Each zumpus is a dumpus.
+(3) Trux is a dumpus.
+(4) Dumpuses are not tall.
+(5) Trux is not tall.
+Answer: No
+
+
+Impuses are gorpuses. Impuses are not tall. Each gorpus is hungry. Vumpuses are wumpuses. Each vumpus is not hungry. Each vumpus is not tall. Each gorpus is large. Trux is a impus. Trux is a wumpus.
+
+Question: Is Trux hungry?
+Think step by step.
+","Here's the step-by-step answer:
+
+(1) Trux is a impus.
+(2) Impuses are gorpuses.
+(3) Each gorpus is hungry.
+(4) Impuses are not tall. (Note: This statement doesn't affect the conclusion about hunger)
+(5) Trux is a wumpus.
+(6) Vumpuses are wumpuses. (Note: This statement doesn't affect the conclusion about hunger)
+(7) Each vumpus is not hungry. (Note: This statement doesn't affect the conclusion about Trux, which is an impus, not a vumpus)
+(8) Each vumpus is not tall. (Note: This statement doesn't affect the conclusion about Trux, which is an impus, not a vumpus)
+(9) Each gorpus is large. (Note: This statement doesn't affect the conclusion about hunger)
+
+Since Trux is an impus, and each gorpus is hungry, we can conclude that:
+
+Trux is hungry.
+
+Answer: Yes",Yes,"['Trux is a impus.', 'Each impus is a gorpus.', 'Trux is a gorpus.', 'Gorpuses are hungry.', 'Trux is hungry.']",Yes,"['Trux is a impus.', 'Impuses are gorpuses.', 'Each gorpus is hungry.', ""Impuses are not tall. (Note: This statement doesn't affect the conclusion about hunger)"", 'Trux is a wumpus.', ""Vumpuses are wumpuses. (Note: This statement doesn't affect the conclusion about hunger)"", ""Each vumpus is not hungry. (Note: This statement doesn't affect the conclusion about Trux, which is an impus, not a vumpus)"", ""Each vumpus is not tall. (Note: This statement doesn't affect the conclusion about Trux, which is an impus, not a vumpus)"", ""Each gorpus is large. (Note: This statement doesn't affect the conclusion about hunger)""]",True,False
+"Answer to the following question as shown in the following examples.
+Rompuses are not happy. Gorpuses are tall. Each rompus is not tall. Each shumpus is a rompus. Gorpuses are crazy. Gorpuses are yumpuses. Each shumpus is crazy. Grom is a shumpus. Grom is a yumpus.
+
+Question: Is Grom tall?
+Think step by step.
+
+(1) Grom is a shumpus.
+(2) Each shumpus is a rompus.
+(3) Grom is a rompus.
+(4) Rompuses are not tall.
+(5) Grom is not tall.
+Answer: No
+
+
+Yumpuses are not hungry. Impuses are zumpuses. Each yumpus is not happy. Each zumpus is crazy. Yumpuses are rompuses. Zumpuses are hungry. Each impus is not happy. Grom is a impus. Grom is a rompus.
+
+Question: Is Grom hungry?
+Think step by step.
+","Let's break it down step by step:
+
+(1) Grom is an impus.
+(2) Impuses are zumpuses.
+(3) Grom is a zumpus.
+(4) Zumpuses are hungry.
+(5) Grom is hungry.
+
+Answer: Yes",Yes,"['Grom is a impus.', 'Each impus is a zumpus.', 'Grom is a zumpus.', 'Each zumpus is hungry.', 'Grom is hungry.']",Yes,"['Grom is an impus.', 'Impuses are zumpuses.', 'Grom is a zumpus.', 'Zumpuses are hungry.', 'Grom is hungry.']",True,True
+"Answer to the following question as shown in the following examples.
+Each grimpus is not fast. Grimpuses are not happy. Each gorpus is a shumpus. Grimpuses are brimpuses. Each shumpus is crazy. Each gorpus is not fast. Shumpuses are happy. Wren is a brimpus. Wren is a gorpus.
+
+Question: Is Wren happy?
+Think step by step.
+
+(1) Wren is a gorpus.
+(2) Each gorpus is a shumpus.
+(3) Wren is a shumpus.
+(4) Each shumpus is happy.
+(5) Wren is happy.
+Answer: Yes
+
+
+Lorpuses are fast. Each lempus is not crazy. Lorpuses are zumpuses. Each lempus is a gorpus. Each zumpus is blonde. Each zumpus is crazy. Each lempus is fast. Trux is a gorpus. Trux is a lorpus.
+
+Question: Is Trux crazy?
+Think step by step.
+","Here's the step-by-step answer:
+
+(1) Trux is a gorpus.
+(2) Each gorpus is a lempus.
+(3) Trux is a lempus.
+(4) Each lempus is not crazy.
+(5) Trux is not crazy.
+
+Answer: No",Yes,"['Trux is a lorpus.', 'Each lorpus is a zumpus.', 'Trux is a zumpus.', 'Zumpuses are crazy.', 'Trux is crazy.']",No,"['Trux is a gorpus.', 'Each gorpus is a lempus.', 'Trux is a lempus.', 'Each lempus is not crazy.', 'Trux is not crazy.']",False,False
+"Answer to the following question as shown in the following examples.
+Brimpuses are not large. Each grimpus is a jompus. Each brimpus is a wumpus. Wumpuses are not happy. Each grimpus is blonde. Wumpuses are not blonde. Each grimpus is not large. Jinx is a jompus. Jinx is a brimpus.
+
+Question: Is Jinx blonde?
+Think step by step.
+
+(1) Jinx is a brimpus.
+(2) Each brimpus is a wumpus.
+(3) Jinx is a wumpus.
+(4) Wumpuses are not blonde.
+(5) Jinx is not blonde.
+Answer: No
+
+
+Each numpus is a wumpus. Wumpuses are not tall. Tumpuses are tall. Wumpuses are fast. Each tumpus is not hungry. Each numpus is not hungry. Each tumpus is a jompus. Jinx is a jompus. Jinx is a numpus.
+
+Question: Is Jinx tall?
+Think step by step.
+","Let's break it down step by step:
+
+(1) Jinx is a numpus.
+(2) Each numpus is a wumpus.
+(3) Jinx is a wumpus.
+(4) Wumpuses are not tall.
+(5) Jinx is not tall.
+
+Answer: No",No,"['Jinx is a numpus.', 'Each numpus is a wumpus.', 'Jinx is a wumpus.', 'Each wumpus is not tall.', 'Jinx is not tall.']",No,"['Jinx is a numpus.', 'Each numpus is a wumpus.', 'Jinx is a wumpus.', 'Wumpuses are not tall.', 'Jinx is not tall.']",True,True
+"Answer to the following question as shown in the following examples.
+Yumpuses are not heavy. Tumpuses are yumpuses. Tumpuses are not large. Yumpuses are luminous. Wumpuses are zumpuses. Wumpuses are heavy. Wumpuses are not large. Grom is a tumpus. Grom is a zumpus.
+
+Question: Is Grom heavy?
+Think step by step.
+
+(1) Grom is a tumpus.
+(2) Each tumpus is a yumpus.
+(3) Grom is a yumpus.
+(4) Yumpuses are not heavy.
+(5) Grom is not heavy.
+Answer: No
+
+
+Rompuses are not crazy. Lorpuses are crazy. Gorpuses are lorpuses. Rompuses are fast. Each rompus is a lempus. Lorpuses are not happy. Each gorpus is fast. Jinx is a gorpus. Jinx is a lempus.
+
+Question: Is Jinx crazy?
+Think step by step.
+","Here's the answer:
+
+(1) Jinx is a gorpus.
+(2) Each gorpus is a lorpus.
+(3) Jinx is a lorpus.
+(4) Lorpuses are crazy.
+(5) Jinx is crazy.
+
+Answer: Yes",Yes,"['Jinx is a gorpus.', 'Each gorpus is a lorpus.', 'Jinx is a lorpus.', 'Lorpuses are crazy.', 'Jinx is crazy.']",Yes,"['Jinx is a gorpus.', 'Each gorpus is a lorpus.', 'Jinx is a lorpus.', 'Lorpuses are crazy.', 'Jinx is crazy.']",True,True

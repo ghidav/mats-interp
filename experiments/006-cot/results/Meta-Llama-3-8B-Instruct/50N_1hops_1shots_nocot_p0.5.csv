@@ -1,0 +1,701 @@
+prompt,answer,label,cot_gold,pred,cot_pred,correct_pred,correct_cot
+"Answer to the following question as shown in the following examples.
+Each dumpus is not fast. Brimpuses are crazy. Each wumpus is a brimpus. Dumpuses are not large. Wumpuses are fast. Grom is a dumpus. Grom is a brimpus.
+
+Question: Is Grom fast?
+Answer Yes or No.
+
+Answer: No
+
+
+Tumpuses are grimpuses. Each grimpus is not blonde. Each impus is heavy. Each tumpus is not heavy. Impuses are hungry. Trux is a impus. Trux is a grimpus.
+
+Question: Is Trux heavy?
+Answer Yes or No.
+",Answer: No,Yes,"['Trux is a impus.', 'Impuses are heavy.', 'Trux is heavy.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Wumpuses are tumpuses. Each wumpus is not fast. Lempuses are tall. Each tumpus is not happy. Each lempus is fast. Wren is a lempus. Wren is a tumpus.
+
+Question: Is Wren fast?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Each grimpus is tall. Each brimpus is a grimpus. Gorpuses are heavy. Brimpuses are blonde. Gorpuses are not blonde. Grom is a gorpus. Grom is a grimpus.
+
+Question: Is Grom blonde?
+Answer Yes or No.
+",No,No,"['Grom is a gorpus.', 'Gorpuses are not blonde.', 'Grom is not blonde.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Each shumpus is luminous. Each vumpus is happy. Each wumpus is crazy. Wumpuses are not happy. Vumpuses are shumpuses. Wren is a wumpus. Wren is a shumpus.
+
+Question: Is Wren happy?
+Answer Yes or No.
+
+Answer: No
+
+
+Each shumpus is a zumpus. Shumpuses are not fast. Each impus is happy. Zumpuses are not tall. Impuses are fast. Rast is a impus. Rast is a zumpus.
+
+Question: Is Rast fast?
+Answer Yes or No.
+",Yes,Yes,"['Rast is a impus.', 'Each impus is fast.', 'Rast is fast.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Each tumpus is blonde. Each dumpus is happy. Dumpuses are not blonde. Each lempus is not crazy. Tumpuses are lempuses. Trux is a lempus. Trux is a dumpus.
+
+Question: Is Trux blonde?
+Answer Yes or No.
+
+Answer: No
+
+
+Each lempus is not crazy. Yumpuses are blonde. Yumpuses are luminous. Each tumpus is a lempus. Tumpuses are not blonde. Wren is a yumpus. Wren is a lempus.
+
+Question: Is Wren blonde?
+Answer Yes or No.
+",Answer: No,Yes,"['Wren is a yumpus.', 'Each yumpus is blonde.', 'Wren is blonde.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Each wumpus is a rompus. Each wumpus is not large. Each vumpus is luminous. Each vumpus is large. Each rompus is not tall. Jinx is a rompus. Jinx is a vumpus.
+
+Question: Is Jinx large?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Each shumpus is luminous. Tumpuses are not heavy. Dumpuses are not large. Each shumpus is a tumpus. Each dumpus is not luminous. Grom is a dumpus. Grom is a tumpus.
+
+Question: Is Grom luminous?
+Answer Yes or No.
+",No,No,"['Grom is a dumpus.', 'Each dumpus is not luminous.', 'Grom is not luminous.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Each sterpus is not tall. Sterpuses are not crazy. Grimpuses are crazy. Grimpuses are lempuses. Each lempus is fast. Trux is a sterpus. Trux is a lempus.
+
+Question: Is Trux crazy?
+Answer Yes or No.
+
+Answer: No
+
+
+Zumpuses are not fast. Gorpuses are crazy. Shumpuses are fast. Each zumpus is a gorpus. Shumpuses are not happy. Grom is a gorpus. Grom is a shumpus.
+
+Question: Is Grom fast?
+Answer Yes or No.
+",Answer: Yes,Yes,"['Grom is a shumpus.', 'Each shumpus is fast.', 'Grom is fast.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Each jompus is a yumpus. Each lorpus is not fast. Lorpuses are hungry. Jompuses are not hungry. Each yumpus is not happy. Grom is a yumpus. Grom is a lorpus.
+
+Question: Is Grom hungry?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Vumpuses are jompuses. Each rompus is luminous. Vumpuses are not luminous. Each rompus is tall. Each jompus is heavy. Rast is a jompus. Rast is a rompus.
+
+Question: Is Rast luminous?
+Answer Yes or No.
+",No.,Yes,"['Rast is a rompus.', 'Rompuses are luminous.', 'Rast is luminous.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Each rompus is fast. Gorpuses are not fast. Each tumpus is happy. Rompuses are tumpuses. Gorpuses are not heavy. Wren is a gorpus. Wren is a tumpus.
+
+Question: Is Wren fast?
+Answer Yes or No.
+
+Answer: No
+
+
+Each lempus is hungry. Sterpuses are heavy. Grimpuses are not fast. Each lempus is not heavy. Each sterpus is a grimpus. Rast is a lempus. Rast is a grimpus.
+
+Question: Is Rast heavy?
+Answer Yes or No.
+",Answer: Yes,No,"['Rast is a lempus.', 'Each lempus is not heavy.', 'Rast is not heavy.']",Yes,[],False,
+"Answer to the following question as shown in the following examples.
+Each gorpus is luminous. Each dumpus is large. Sterpuses are dumpuses. Sterpuses are not crazy. Gorpuses are crazy. Trux is a dumpus. Trux is a gorpus.
+
+Question: Is Trux crazy?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Sterpuses are not heavy. Tumpuses are not happy. Each lempus is large. Sterpuses are lempuses. Each tumpus is heavy. Trux is a lempus. Trux is a tumpus.
+
+Question: Is Trux heavy?
+Answer Yes or No.
+",Answer: Yes,Yes,"['Trux is a tumpus.', 'Tumpuses are heavy.', 'Trux is heavy.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Each vumpus is not fast. Each rompus is fast. Grimpuses are not heavy. Vumpuses are grimpuses. Each rompus is not happy. Rast is a rompus. Rast is a grimpus.
+
+Question: Is Rast fast?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Grimpuses are not crazy. Shumpuses are tall. Each jompus is a shumpus. Jompuses are crazy. Grimpuses are not large. Jinx is a shumpus. Jinx is a grimpus.
+
+Question: Is Jinx crazy?
+Answer Yes or No.
+",Yes,No,"['Jinx is a grimpus.', 'Grimpuses are not crazy.', 'Jinx is not crazy.']",Yes,[],False,
+"Answer to the following question as shown in the following examples.
+Each numpus is a tumpus. Brimpuses are hungry. Tumpuses are not blonde. Each numpus is not fast. Each brimpus is fast. Jinx is a brimpus. Jinx is a tumpus.
+
+Question: Is Jinx fast?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Numpuses are blonde. Each gorpus is happy. Each dumpus is a gorpus. Numpuses are not large. Each dumpus is not blonde. Grom is a numpus. Grom is a gorpus.
+
+Question: Is Grom blonde?
+Answer Yes or No.
+",No,Yes,"['Grom is a numpus.', 'Each numpus is blonde.', 'Grom is blonde.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Each tumpus is happy. Gorpuses are large. Gorpuses are heavy. Vumpuses are tumpuses. Each vumpus is not large. Grom is a gorpus. Grom is a tumpus.
+
+Question: Is Grom large?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Each shumpus is not happy. Each lorpus is hungry. Each wumpus is a shumpus. Wumpuses are not hungry. Lorpuses are luminous. Rast is a shumpus. Rast is a lorpus.
+
+Question: Is Rast hungry?
+Answer Yes or No.
+",Answer: Yes,Yes,"['Rast is a lorpus.', 'Each lorpus is hungry.', 'Rast is hungry.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Each dumpus is heavy. Dumpuses are fast. Brimpuses are crazy. Numpuses are not fast. Numpuses are brimpuses. Grom is a brimpus. Grom is a dumpus.
+
+Question: Is Grom fast?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Impuses are luminous. Each yumpus is fast. Impuses are not fast. Yumpuses are brimpuses. Each brimpus is happy. Jinx is a impus. Jinx is a brimpus.
+
+Question: Is Jinx fast?
+Answer Yes or No.
+",Answer: No,No,"['Jinx is a impus.', 'Each impus is not fast.', 'Jinx is not fast.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Tumpuses are not fast. Each brimpus is a dumpus. Each tumpus is happy. Each brimpus is not happy. Dumpuses are heavy. Grom is a tumpus. Grom is a dumpus.
+
+Question: Is Grom happy?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Tumpuses are not tall. Sterpuses are not fast. Dumpuses are blonde. Sterpuses are not blonde. Dumpuses are tumpuses. Grom is a sterpus. Grom is a tumpus.
+
+Question: Is Grom blonde?
+Answer Yes or No.
+",Answer: Yes,No,"['Grom is a sterpus.', 'Each sterpus is not blonde.', 'Grom is not blonde.']",Yes,[],False,
+"Answer to the following question as shown in the following examples.
+Each grimpus is not happy. Each sterpus is happy. Sterpuses are numpuses. Each grimpus is blonde. Numpuses are fast. Grom is a numpus. Grom is a grimpus.
+
+Question: Is Grom happy?
+Answer Yes or No.
+
+Answer: No
+
+
+Impuses are fast. Jompuses are large. Jompuses are wumpuses. Each wumpus is hungry. Each impus is not large. Wren is a wumpus. Wren is a impus.
+
+Question: Is Wren large?
+Answer Yes or No.
+",Answer: No,No,"['Wren is a impus.', 'Each impus is not large.', 'Wren is not large.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Each rompus is not crazy. Each rompus is a jompus. Gorpuses are hungry. Each gorpus is crazy. Jompuses are not heavy. Wren is a gorpus. Wren is a jompus.
+
+Question: Is Wren crazy?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Each tumpus is a zumpus. Tumpuses are not heavy. Each grimpus is luminous. Each grimpus is heavy. Each zumpus is not tall. Jinx is a grimpus. Jinx is a zumpus.
+
+Question: Is Jinx heavy?
+Answer Yes or No.
+",Answer: Yes,Yes,"['Jinx is a grimpus.', 'Grimpuses are heavy.', 'Jinx is heavy.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Each shumpus is fast. Dumpuses are zumpuses. Dumpuses are not fast. Each zumpus is luminous. Each shumpus is not heavy. Rast is a shumpus. Rast is a zumpus.
+
+Question: Is Rast fast?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Vumpuses are not heavy. Rompuses are fast. Each lempus is a vumpus. Each lempus is not fast. Each rompus is hungry. Jinx is a rompus. Jinx is a vumpus.
+
+Question: Is Jinx fast?
+Answer Yes or No.
+",Answer: No,Yes,"['Jinx is a rompus.', 'Each rompus is fast.', 'Jinx is fast.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Each wumpus is crazy. Lempuses are not crazy. Each lempus is a lorpus. Wumpuses are tall. Each lorpus is not blonde. Trux is a wumpus. Trux is a lorpus.
+
+Question: Is Trux crazy?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Tumpuses are not happy. Each numpus is luminous. Tumpuses are not luminous. Numpuses are yumpuses. Each yumpus is not blonde. Jinx is a yumpus. Jinx is a tumpus.
+
+Question: Is Jinx luminous?
+Answer Yes or No.
+",Answer: No,No,"['Jinx is a tumpus.', 'Each tumpus is not luminous.', 'Jinx is not luminous.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Yumpuses are hungry. Sterpuses are yumpuses. Sterpuses are not large. Each tumpus is large. Tumpuses are heavy. Jinx is a yumpus. Jinx is a tumpus.
+
+Question: Is Jinx large?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Brimpuses are not happy. Impuses are not tall. Each jompus is not luminous. Each impus is a jompus. Each brimpus is tall. Jinx is a brimpus. Jinx is a jompus.
+
+Question: Is Jinx tall?
+Answer Yes or No.
+",Answer: Yes,Yes,"['Jinx is a brimpus.', 'Each brimpus is tall.', 'Jinx is tall.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Each brimpus is crazy. Each impus is blonde. Each brimpus is a lorpus. Each lorpus is happy. Impuses are not crazy. Jinx is a impus. Jinx is a lorpus.
+
+Question: Is Jinx crazy?
+Answer Yes or No.
+
+Answer: No
+
+
+Tumpuses are luminous. Each lorpus is a shumpus. Each shumpus is fast. Each tumpus is not tall. Each lorpus is not luminous. Jinx is a shumpus. Jinx is a tumpus.
+
+Question: Is Jinx luminous?
+Answer Yes or No.
+",Answer: No,Yes,"['Jinx is a tumpus.', 'Each tumpus is luminous.', 'Jinx is luminous.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Vumpuses are luminous. Each vumpus is not heavy. Wumpuses are heavy. Each wumpus is a zumpus. Each zumpus is not fast. Trux is a zumpus. Trux is a vumpus.
+
+Question: Is Trux heavy?
+Answer Yes or No.
+
+Answer: No
+
+
+Lempuses are not crazy. Lempuses are tall. Vumpuses are impuses. Vumpuses are not tall. Each impus is blonde. Jinx is a lempus. Jinx is a impus.
+
+Question: Is Jinx tall?
+Answer Yes or No.
+",Answer: No,Yes,"['Jinx is a lempus.', 'Each lempus is tall.', 'Jinx is tall.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Shumpuses are not large. Gorpuses are not blonde. Shumpuses are grimpuses. Grimpuses are not tall. Each gorpus is large. Trux is a gorpus. Trux is a grimpus.
+
+Question: Is Trux large?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Each tumpus is not happy. Brimpuses are vumpuses. Tumpuses are not fast. Brimpuses are fast. Vumpuses are large. Grom is a tumpus. Grom is a vumpus.
+
+Question: Is Grom fast?
+Answer Yes or No.
+",Answer: No,No,"['Grom is a tumpus.', 'Each tumpus is not fast.', 'Grom is not fast.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Each numpus is not happy. Each impus is not crazy. Rompuses are not large. Rompuses are numpuses. Each impus is large. Trux is a numpus. Trux is a impus.
+
+Question: Is Trux large?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Shumpuses are not hungry. Jompuses are not luminous. Each shumpus is luminous. Impuses are not large. Jompuses are impuses. Wren is a shumpus. Wren is a impus.
+
+Question: Is Wren luminous?
+Answer Yes or No.
+",Answer: Yes,Yes,"['Wren is a shumpus.', 'Each shumpus is luminous.', 'Wren is luminous.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Vumpuses are not happy. Numpuses are heavy. Tumpuses are vumpuses. Each numpus is blonde. Each tumpus is not blonde. Trux is a numpus. Trux is a vumpus.
+
+Question: Is Trux blonde?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Grimpuses are jompuses. Sterpuses are heavy. Each grimpus is luminous. Each jompus is tall. Sterpuses are not luminous. Jinx is a jompus. Jinx is a sterpus.
+
+Question: Is Jinx luminous?
+Answer Yes or No.
+",No,No,"['Jinx is a sterpus.', 'Sterpuses are not luminous.', 'Jinx is not luminous.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Each vumpus is tall. Each jompus is not crazy. Shumpuses are vumpuses. Each shumpus is not large. Each jompus is large. Grom is a jompus. Grom is a vumpus.
+
+Question: Is Grom large?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Each gorpus is happy. Grimpuses are not fast. Grimpuses are gorpuses. Tumpuses are tall. Tumpuses are fast. Rast is a tumpus. Rast is a gorpus.
+
+Question: Is Rast fast?
+Answer Yes or No.
+",Answer: Yes,Yes,"['Rast is a tumpus.', 'Each tumpus is fast.', 'Rast is fast.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Shumpuses are luminous. Each dumpus is not luminous. Each yumpus is hungry. Each dumpus is a yumpus. Shumpuses are crazy. Trux is a shumpus. Trux is a yumpus.
+
+Question: Is Trux luminous?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Each shumpus is fast. Each shumpus is heavy. Each dumpus is crazy. Lorpuses are not fast. Lorpuses are dumpuses. Jinx is a shumpus. Jinx is a dumpus.
+
+Question: Is Jinx fast?
+Answer Yes or No.
+",No,Yes,"['Jinx is a shumpus.', 'Shumpuses are fast.', 'Jinx is fast.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Lorpuses are not fast. Gorpuses are lorpuses. Each impus is not hungry. Gorpuses are not luminous. Each impus is luminous. Wren is a impus. Wren is a lorpus.
+
+Question: Is Wren luminous?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Vumpuses are impuses. Each vumpus is blonde. Each wumpus is not blonde. Wumpuses are not heavy. Impuses are not crazy. Jinx is a wumpus. Jinx is a impus.
+
+Question: Is Jinx blonde?
+Answer Yes or No.
+",Yes,No,"['Jinx is a wumpus.', 'Each wumpus is not blonde.', 'Jinx is not blonde.']",Yes,[],False,
+"Answer to the following question as shown in the following examples.
+Impuses are brimpuses. Each impus is not luminous. Tumpuses are not heavy. Each brimpus is not blonde. Each tumpus is luminous. Rast is a brimpus. Rast is a tumpus.
+
+Question: Is Rast luminous?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Vumpuses are not tall. Sterpuses are not fast. Each brimpus is tall. Each vumpus is a sterpus. Brimpuses are heavy. Trux is a brimpus. Trux is a sterpus.
+
+Question: Is Trux tall?
+Answer Yes or No.
+",Answer: Yes,Yes,"['Trux is a brimpus.', 'Each brimpus is tall.', 'Trux is tall.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Zumpuses are not blonde. Each dumpus is luminous. Yumpuses are blonde. Each zumpus is a dumpus. Each yumpus is fast. Wren is a yumpus. Wren is a dumpus.
+
+Question: Is Wren blonde?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Each wumpus is crazy. Sterpuses are hungry. Impuses are luminous. Each wumpus is a impus. Sterpuses are not crazy. Wren is a sterpus. Wren is a impus.
+
+Question: Is Wren crazy?
+Answer Yes or No.
+",No,No,"['Wren is a sterpus.', 'Each sterpus is not crazy.', 'Wren is not crazy.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Brimpuses are not crazy. Numpuses are brimpuses. Each zumpus is tall. Zumpuses are happy. Each numpus is not happy. Trux is a brimpus. Trux is a zumpus.
+
+Question: Is Trux happy?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Gorpuses are impuses. Lempuses are large. Each gorpus is not large. Each lempus is not luminous. Impuses are tall. Rast is a impus. Rast is a lempus.
+
+Question: Is Rast large?
+Answer Yes or No.
+",Answer: No,Yes,"['Rast is a lempus.', 'Lempuses are large.', 'Rast is large.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Each zumpus is not crazy. Each tumpus is happy. Rompuses are crazy. Rompuses are tumpuses. Zumpuses are not large. Rast is a zumpus. Rast is a tumpus.
+
+Question: Is Rast crazy?
+Answer Yes or No.
+
+Answer: No
+
+
+Each grimpus is not large. Zumpuses are luminous. Grimpuses are happy. Each vumpus is a zumpus. Vumpuses are large. Jinx is a grimpus. Jinx is a zumpus.
+
+Question: Is Jinx large?
+Answer Yes or No.
+",Answer: Yes,No,"['Jinx is a grimpus.', 'Grimpuses are not large.', 'Jinx is not large.']",Yes,[],False,
+"Answer to the following question as shown in the following examples.
+Each yumpus is a dumpus. Each jompus is not heavy. Each jompus is not crazy. Each dumpus is not hungry. Each yumpus is crazy. Trux is a jompus. Trux is a dumpus.
+
+Question: Is Trux crazy?
+Answer Yes or No.
+
+Answer: No
+
+
+Numpuses are sterpuses. Each brimpus is hungry. Sterpuses are blonde. Each numpus is not hungry. Brimpuses are happy. Wren is a brimpus. Wren is a sterpus.
+
+Question: Is Wren hungry?
+Answer Yes or No.
+",Answer: No,Yes,"['Wren is a brimpus.', 'Brimpuses are hungry.', 'Wren is hungry.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Each zumpus is heavy. Each yumpus is not luminous. Each lorpus is a yumpus. Lorpuses are not heavy. Each zumpus is not tall. Rast is a zumpus. Rast is a yumpus.
+
+Question: Is Rast heavy?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Each tumpus is not fast. Numpuses are hungry. Tumpuses are vumpuses. Each numpus is fast. Vumpuses are happy. Grom is a vumpus. Grom is a numpus.
+
+Question: Is Grom fast?
+Answer Yes or No.
+",Answer: Yes,Yes,"['Grom is a numpus.', 'Each numpus is fast.', 'Grom is fast.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Vumpuses are numpuses. Shumpuses are not blonde. Numpuses are not heavy. Each vumpus is luminous. Each shumpus is not luminous. Grom is a numpus. Grom is a shumpus.
+
+Question: Is Grom luminous?
+Answer Yes or No.
+
+Answer: No
+
+
+Each vumpus is hungry. Zumpuses are impuses. Each impus is not tall. Zumpuses are heavy. Vumpuses are not heavy. Jinx is a vumpus. Jinx is a impus.
+
+Question: Is Jinx heavy?
+Answer Yes or No.
+",Answer: No,No,"['Jinx is a vumpus.', 'Each vumpus is not heavy.', 'Jinx is not heavy.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Rompuses are not happy. Each tumpus is a jompus. Each rompus is not luminous. Each tumpus is happy. Each jompus is hungry. Grom is a jompus. Grom is a rompus.
+
+Question: Is Grom happy?
+Answer Yes or No.
+
+Answer: No
+
+
+Each impus is not heavy. Gorpuses are wumpuses. Each impus is tall. Each gorpus is not tall. Each wumpus is not fast. Grom is a wumpus. Grom is a impus.
+
+Question: Is Grom tall?
+Answer Yes or No.
+",Answer: Yes,Yes,"['Grom is a impus.', 'Impuses are tall.', 'Grom is tall.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Each lempus is not luminous. Each vumpus is a lempus. Each vumpus is heavy. Each numpus is not hungry. Each numpus is not heavy. Jinx is a numpus. Jinx is a lempus.
+
+Question: Is Jinx heavy?
+Answer Yes or No.
+
+Answer: No
+
+
+Each vumpus is a zumpus. Each jompus is not blonde. Each jompus is not large. Vumpuses are blonde. Zumpuses are not heavy. Jinx is a jompus. Jinx is a zumpus.
+
+Question: Is Jinx blonde?
+Answer Yes or No.
+",Answer: Yes,No,"['Jinx is a jompus.', 'Each jompus is not blonde.', 'Jinx is not blonde.']",Yes,[],False,
+"Answer to the following question as shown in the following examples.
+Each numpus is fast. Each yumpus is tall. Each grimpus is not fast. Each grimpus is a yumpus. Each numpus is large. Wren is a yumpus. Wren is a numpus.
+
+Question: Is Wren fast?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Sterpuses are not fast. Each jompus is not crazy. Shumpuses are sterpuses. Each jompus is not happy. Shumpuses are happy. Jinx is a sterpus. Jinx is a jompus.
+
+Question: Is Jinx happy?
+Answer Yes or No.
+",Answer: Yes,No,"['Jinx is a jompus.', 'Jompuses are not happy.', 'Jinx is not happy.']",Yes,[],False,
+"Answer to the following question as shown in the following examples.
+Shumpuses are luminous. Tumpuses are large. Each shumpus is a tumpus. Zumpuses are not luminous. Zumpuses are happy. Grom is a tumpus. Grom is a zumpus.
+
+Question: Is Grom luminous?
+Answer Yes or No.
+
+Answer: No
+
+
+Each lorpus is fast. Vumpuses are lorpuses. Vumpuses are hungry. Grimpuses are not hungry. Grimpuses are heavy. Grom is a lorpus. Grom is a grimpus.
+
+Question: Is Grom hungry?
+Answer Yes or No.
+",Answer: Yes,No,"['Grom is a grimpus.', 'Grimpuses are not hungry.', 'Grom is not hungry.']",Yes,[],False,
+"Answer to the following question as shown in the following examples.
+Each gorpus is a dumpus. Gorpuses are fast. Dumpuses are happy. Each lorpus is not hungry. Each lorpus is not fast. Grom is a dumpus. Grom is a lorpus.
+
+Question: Is Grom fast?
+Answer Yes or No.
+
+Answer: No
+
+
+Each sterpus is not crazy. Each vumpus is not luminous. Vumpuses are sterpuses. Each brimpus is luminous. Each brimpus is heavy. Rast is a sterpus. Rast is a brimpus.
+
+Question: Is Rast luminous?
+Answer Yes or No.
+",Yes,Yes,"['Rast is a brimpus.', 'Brimpuses are luminous.', 'Rast is luminous.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Gorpuses are not heavy. Each numpus is blonde. Each numpus is a lempus. Gorpuses are not blonde. Lempuses are not crazy. Grom is a lempus. Grom is a gorpus.
+
+Question: Is Grom blonde?
+Answer Yes or No.
+
+Answer: No
+
+
+Each brimpus is blonde. Brimpuses are sterpuses. Gorpuses are not blonde. Each gorpus is large. Sterpuses are hungry. Grom is a gorpus. Grom is a sterpus.
+
+Question: Is Grom blonde?
+Answer Yes or No.
+",Answer: No,No,"['Grom is a gorpus.', 'Each gorpus is not blonde.', 'Grom is not blonde.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Rompuses are not fast. Sterpuses are wumpuses. Each rompus is not tall. Wumpuses are not luminous. Each sterpus is tall. Wren is a wumpus. Wren is a rompus.
+
+Question: Is Wren tall?
+Answer Yes or No.
+
+Answer: No
+
+
+Each lempus is not tall. Each zumpus is a sterpus. Each lempus is heavy. Each zumpus is not heavy. Each sterpus is crazy. Wren is a lempus. Wren is a sterpus.
+
+Question: Is Wren heavy?
+Answer Yes or No.
+",Answer: No,Yes,"['Wren is a lempus.', 'Lempuses are heavy.', 'Wren is heavy.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Wumpuses are luminous. Each wumpus is a shumpus. Lempuses are not luminous. Each shumpus is not large. Lempuses are blonde. Jinx is a shumpus. Jinx is a lempus.
+
+Question: Is Jinx luminous?
+Answer Yes or No.
+
+Answer: No
+
+
+Yumpuses are not large. Each shumpus is hungry. Each impus is a shumpus. Impuses are large. Yumpuses are crazy. Trux is a shumpus. Trux is a yumpus.
+
+Question: Is Trux large?
+Answer Yes or No.
+",Answer: No,No,"['Trux is a yumpus.', 'Each yumpus is not large.', 'Trux is not large.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Tumpuses are crazy. Each zumpus is a gorpus. Gorpuses are not hungry. Tumpuses are not heavy. Each zumpus is not crazy. Wren is a gorpus. Wren is a tumpus.
+
+Question: Is Wren crazy?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Each zumpus is fast. Each sterpus is not tall. Each zumpus is a jompus. Each sterpus is not fast. Jompuses are blonde. Trux is a jompus. Trux is a sterpus.
+
+Question: Is Trux fast?
+Answer Yes or No.
+",Answer: No,No,"['Trux is a sterpus.', 'Sterpuses are not fast.', 'Trux is not fast.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Each jompus is not crazy. Each jompus is not happy. Each sterpus is blonde. Shumpuses are crazy. Each shumpus is a sterpus. Trux is a sterpus. Trux is a jompus.
+
+Question: Is Trux crazy?
+Answer Yes or No.
+
+Answer: No
+
+
+Vumpuses are grimpuses. Grimpuses are crazy. Each brimpus is large. Each vumpus is not large. Each brimpus is tall. Trux is a brimpus. Trux is a grimpus.
+
+Question: Is Trux large?
+Answer Yes or No.
+",Answer: No,Yes,"['Trux is a brimpus.', 'Each brimpus is large.', 'Trux is large.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Each jompus is not crazy. Jompuses are not hungry. Each tumpus is not tall. Each brimpus is a tumpus. Each brimpus is crazy. Trux is a jompus. Trux is a tumpus.
+
+Question: Is Trux crazy?
+Answer Yes or No.
+
+Answer: No
+
+
+Vumpuses are crazy. Each lempus is not luminous. Each numpus is happy. Each vumpus is a lempus. Each numpus is not crazy. Jinx is a numpus. Jinx is a lempus.
+
+Question: Is Jinx crazy?
+Answer Yes or No.
+",Answer: No,No,"['Jinx is a numpus.', 'Numpuses are not crazy.', 'Jinx is not crazy.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Jompuses are grimpuses. Tumpuses are not luminous. Grimpuses are large. Each jompus is luminous. Tumpuses are heavy. Jinx is a grimpus. Jinx is a tumpus.
+
+Question: Is Jinx luminous?
+Answer Yes or No.
+
+Answer: No
+
+
+Lorpuses are large. Each gorpus is tall. Lorpuses are not happy. Grimpuses are not large. Each grimpus is a gorpus. Wren is a lorpus. Wren is a gorpus.
+
+Question: Is Wren large?
+Answer Yes or No.
+",No,Yes,"['Wren is a lorpus.', 'Each lorpus is large.', 'Wren is large.']",No,[],False,
+"Answer to the following question as shown in the following examples.
+Each gorpus is not happy. Brimpuses are happy. Gorpuses are rompuses. Each brimpus is not hungry. Rompuses are not fast. Wren is a rompus. Wren is a brimpus.
+
+Question: Is Wren happy?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Tumpuses are not large. Each numpus is not blonde. Zumpuses are numpuses. Zumpuses are large. Each tumpus is crazy. Rast is a tumpus. Rast is a numpus.
+
+Question: Is Rast large?
+Answer Yes or No.
+",Yes,No,"['Rast is a tumpus.', 'Tumpuses are not large.', 'Rast is not large.']",Yes,[],False,
+"Answer to the following question as shown in the following examples.
+Each numpus is large. Each tumpus is not large. Each numpus is not fast. Each tumpus is a shumpus. Each shumpus is not luminous. Jinx is a shumpus. Jinx is a numpus.
+
+Question: Is Jinx large?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Each sterpus is luminous. Each tumpus is large. Shumpuses are not large. Each shumpus is blonde. Tumpuses are sterpuses. Wren is a shumpus. Wren is a sterpus.
+
+Question: Is Wren large?
+Answer Yes or No.
+",No,No,"['Wren is a shumpus.', 'Shumpuses are not large.', 'Wren is not large.']",No,[],True,
+"Answer to the following question as shown in the following examples.
+Each dumpus is fast. Each dumpus is a tumpus. Each tumpus is not luminous. Each vumpus is heavy. Each vumpus is not fast. Rast is a tumpus. Rast is a vumpus.
+
+Question: Is Rast fast?
+Answer Yes or No.
+
+Answer: No
+
+
+Sterpuses are not tall. Each lorpus is luminous. Sterpuses are lorpuses. Each impus is large. Impuses are tall. Rast is a lorpus. Rast is a impus.
+
+Question: Is Rast tall?
+Answer Yes or No.
+",Answer: Yes,Yes,"['Rast is a impus.', 'Each impus is tall.', 'Rast is tall.']",Yes,[],True,
+"Answer to the following question as shown in the following examples.
+Lorpuses are happy. Each lorpus is large. Grimpuses are tall. Each zumpus is a grimpus. Zumpuses are not happy. Jinx is a grimpus. Jinx is a lorpus.
+
+Question: Is Jinx happy?
+Answer Yes or No.
+
+Answer: Yes
+
+
+Each tumpus is not fast. Tumpuses are blonde. Rompuses are not heavy. Lorpuses are not blonde. Lorpuses are rompuses. Jinx is a rompus. Jinx is a tumpus.
+
+Question: Is Jinx blonde?
+Answer Yes or No.
+",Answer: No,Yes,"['Jinx is a tumpus.', 'Each tumpus is blonde.', 'Jinx is blonde.']",No,[],False,
